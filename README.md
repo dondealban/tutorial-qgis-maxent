@@ -2,12 +2,16 @@
 This repository contains a short tutorial for learning species distribution modeling using Quantum GIS and MaxEnt in half a day. This documentation was prepared for the skills training sessions during the lab retreat of the [Applied Plant Ecology Lab](https://www.appliedplantecology.org), Department of Biological Sciences, National University of Singapore held on 25-28 September 2017 in Malacca, Malaysia.
 
 ## Table of Contents
+- [Download and Installation](#download)
+- [License](#license)
+- [Want to Contribute?](#contribute)
 
 
+<a name="download"></a>
 ## Download and Installation
 For this tutorial, you will need to download and install the [QGIS](http://www.qgis.org/en/site/forusers/download.html) and [MaxEnt](https://biodiversityinformatics.amnh.org/open_source/maxent/) versions compatible with your machine's operating system. The procedures shown in this tutorial uses a Mac OSX platform but it should be applicable to other operating systems.
 
-
+<a name="license"></a>
 ## License
 Creative Commons Attribution 4.0 International [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Please note the Disclaimer of Warranties and Limitation of Liability under Section 5 of this license as follows:
 
