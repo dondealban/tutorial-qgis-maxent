@@ -16,10 +16,10 @@ For this tutorial, download and install the [QGIS](http://www.qgis.org/en/site/f
 ##### Data
 MaxEnt will require two types of input datasets:
 
-1. **Species occurrence data.** The species occurrence records are the geographic locations or coordinates of species observations. For this exercise, we will use the georeferenced database of selected threatened forest tree species compiled by [Ramos et al. (2011)](#ramos_etal_2011).
+1. **Species occurrence data.** The species occurrence records are the geographic point locations or coordinates of species observations. For this exercise, we will use the georeferenced database of selected threatened forest tree species compiled by [Ramos et al. (2011)](#ramos_etal_2011). Download the database from the World Agroforestry Centre / ICRAF Dataverse [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/24818).
 
+2. **Environmental predictors.** The environmental covariates consist of raster data that contain either continuous or categorical values such as precipitation, temperature, elevation, etc. We will be using the following raster datasets:
 
-2. Environmental covariates
 
 We will need to download the following datasets:
 
