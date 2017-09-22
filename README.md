@@ -18,9 +18,7 @@ MaxEnt will require two types of input datasets:
 
 1. **Species occurrence data.** The species occurrence records are the geographic point locations or coordinates of species observations. For this exercise, we will use the georeferenced database of selected threatened forest tree species in the Philippines compiled by [Ramos et al. (2011)](#ramos_etal_2011). Download the database from the World Agroforestry Centre/ICRAF Dataverse [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/24818) (150 KB, CSV file).
 
-2. **Environmental predictors.** The environmental covariates consist of raster data that contain either continuous or categorical values such as precipitation, temperature, elevation, etc. We will be using the following raster datasets:
-
-    - [WorldClim](http://www.worldclim.org): WorldClim is a set of gridded global climate data layers, which can be used for mapping and ecological modeling. For this exercise, we will use [WorldClim v.1.4 Current conditions](http://www.worldclim.org/current) (or interpolations of observed data from 1960-1990). We will need the highest resolution data available provided at 30 arc-seconds (~1 km); hence click the `download by tile` link and choose Tile 210. After clicking the tile, download the GeoTIFF file formats of the [Altitude](http://biogeo.ucdavis.edu/data/climate/worldclim/1_4/tiles/cur/alt_210_tif.zip) (~2 MB, ZIP file) and [Bioclim](http://biogeo.ucdavis.edu/data/climate/worldclim/1_4/tiles/cur/bio_210_tif.zip) (~29 MB, ZIP file) layers.
+2. **Environmental predictors.** The environmental covariates consist of raster data that contain either continuous or categorical values such as precipitation, temperature, elevation, etc. We will be using the [WorldClim](http://www.worldclim.org) raster datasets. WorldClim is a set of gridded global climate data layers, which can be used for mapping and ecological modeling. For this exercise, we will use [WorldClim v.1.4 Current conditions](http://www.worldclim.org/current) (or interpolations of observed data from 1960-1990). We will need the highest resolution data available provided at 30 arc-seconds (~1 km); hence click the `download by tile` link and choose Tile 210. After clicking the tile, download the GeoTIFF file formats of the [Altitude](http://biogeo.ucdavis.edu/data/climate/worldclim/1_4/tiles/cur/alt_210_tif.zip) (~2 MB, ZIP file) and [Bioclim](http://biogeo.ucdavis.edu/data/climate/worldclim/1_4/tiles/cur/bio_210_tif.zip) (~29 MB, ZIP file) layers.
 
 To prepare the datasets, we will also need **administrative boundary** data. We can use the administrative boundary vector data from the [Global Administrative Database](http://www.gadm.org/country). On GADM's Download page, select "Philippines" and "Shapefile" from the *Country* and *Format* drop-down menus, respectively, and click the [download](http://biogeo.ucdavis.edu/data/gadm2.8/shp/PHL_adm_shp.zip) link provided (~22 MB, ZIP file). Once you unzip the file, you should see four shapefiles as follows:
 
@@ -30,7 +28,7 @@ PHL_adm1
 PHL_adm2
 PHL_adm3
 ```
-
+Each shapefile is comprised of four main file types: `.shp` contains the vector geometry, `.dbf` contains the attribute table, `.shx` the shape index, and `.prj` contains the coordinate systema dn projection information.
 
 <a name="study_area"></a>
 ## Study Area
