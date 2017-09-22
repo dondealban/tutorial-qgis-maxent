@@ -37,8 +37,10 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 
 1. First, we will create subsets from the environmental rasters to focus our modeling over our study area. To do this, we will create a polygon shapefile containing the extents of the study area and use this shapefile to clip all the raster map layers.
 
-    - Load the administrative boundary shapefile (PHL_adm2.shp) by adding a vector layer `Layer > Add Layer > Add Vector Layer...` menu. This displays the municipal-level administrative boundaries.
-    - To select our areas of interest, we will select the municipalities from the attribute table. Open the attribute table of PHL_adm2.shp by right-clicking the shapefile and selecting `Open Attribute Table`.
+    - Load the administrative boundary shapefile (PHL_adm2.shp) by adding a vector layer **`Layer > Add Layer > Add Vector Layer...`** menu. This displays the municipal-level administrative boundaries.
+
+    - To select our areas of interest, we will select the municipalities from the attribute table. Open the attribute table of PHL_adm2.shp by right-clicking the shapefile and select `Open Attribute Table`.
+
     - Click the `Select features using an expression` icon. Once the *Select by expression* dialog box opens, enter the following expression:
     ```
      "NAME_2"  = 'Polillo' OR  "NAME_2"  = 'Burdeos' OR  "NAME_2"  = 'Panukulan' OR  "NAME_2"  = 'Patnanungan' OR  "NAME_2"  = 'Jomalig'
