@@ -4,6 +4,8 @@ This repository contains a short tutorial for learning species distribution mode
 
 ## Table of Contents
 - [Download and Installation](#download)
+- [Study Area](#study_area)
+- [Data Preparation](#data_preparation)
 - [References](#references)
 - [License](#license)
 - [Want to Contribute?](#contribute)
@@ -28,6 +30,17 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 <a name="study_area"></a>
 ## Study Area
 **Polillo Islands, Quezon Province, Philippines.** The Polillo group of islands (approx. 14.861 N, 122.038 E) is situated in the northeast part of the Philippine archipelago. The Polillos comprise 27 small islands and islets, 25km off the east coast of Luzon. They form part of the Luzon Endemic Bird Area (EBA), ranked sixth in the world listing of critical EBAs [(Stattersfield et al. 2000)](#stattersfield_etal_1998), whilst also constituting a highly distinct sub-centre of endemicity. Amongst these Polillo-specific endemics are a frog, several reptiles and seven birds, including a goshawk, hornbill, and parrots. The islands also support important populations of globally threatened species (e.g. Philippine cockatoo, Gray’s monitor lizard, Philippine jade vine), and are accorded high priority in all independent reviews of Philippine conservation priority areas. More information about the conservation priorities in the Polillos here.
+
+
+<a name="data_preparation"></a>
+## Data Preparation
+
+1. First, we will create subsets from the environmental rasters to focus our modeling over our study area. To do this, we will create a polygon shapefile containing the extents of the study area and use this shapefile to clip all the raster map layers.
+
+    - Load the administrative boundary shapefile (PHL_adm2.shp) by adding a vector layer `Layer>Add Layer>Add Vector Layer...`. This displays the municipal-level administrative boundaries.
+
+Open the attribute table to check if you have selected five records, which includes the following municipalities: Polillo, Burdeos, Panukulan, Patnanungan, and Jomalig towns.  
+
 
 
 <a name="references"></a>
