@@ -53,14 +53,15 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
     - Then, we will create a polygon from the extent of the municipalities shapefile that we have just saved. Go to **`Vector > Research Tools > Polygon from Layer Extent`** menu.
 
       + Under the `Input Layer` drop-down menu, select the newly created study area shapefile.
-      + Under the `Extent` input line, click `...` and select **`Save to File`** from the menu. Then, click `Run` to create another shapefile showing a box covering the extent of the study area.
+      + Under the `Extent` input line, select **`Save to File`** from the menu to save the file in your working directory. Then, click `Run` to create another shapefile, which consists of a box covering the extent of the study area.
 
     - Next, go to **`Processing > Toolbox`** menu, which opens a `Processing Toolbox` pane. Search for the `Clip raster with polygon` function under the SAGA geoalgorithms and select this function. This will open the **`Clip Raster with Polygon`** dialog box.
 
-      + Under the `Input` drop-down menu, select one of the raster layers.
-      + Under the `Polygons` drop-down menu, select the
+      + Under the `Input` drop-down menu, select one of the raster layers, say **biol1_210.tif**.
+      + Under the `Polygons` drop-down menu, select the box polygon.
+      + Under the `Clipped` input line, select **`Save to File`** from the menu to save the file in your working directory. Change the output file type to **ASC** as this is the file type requirement used by MaxEnt. Then, click `Run`
 
-    You may also opt to run this through batch processing by clicking on the **`Run As a Batch Process...`** button.
+    You may also opt to run this through batch processing by clicking on the **`Run As a Batch Process...`** button.  
 
 <a name="references"></a>
 ## References
