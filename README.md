@@ -10,17 +10,17 @@ This repository contains a short tutorial for learning species distribution mode
 <a name="download"></a>
 ## Download and Installation
 
-##### Software
-For this tutorial, download and install [QGIS](http://www.qgis.org/en/site/forusers/download.html) and [MaxEnt](https://biodiversityinformatics.amnh.org/open_source/maxent/), both of which are free and open-source software. For QGIS, download the version compatible with your machine's operating system. MaxEnt is a Java-based application and will run using various operating systems. The procedures shown in this tutorial uses a Mac OSX platform but it should be applicable to other operating systems.
+#### Software
+For this tutorial, download and install [QGIS](http://www.qgis.org/en/site/forusers/download.html) and [MaxEnt](https://biodiversityinformatics.amnh.org/open_source/maxent/), both of which are free and open-source software. For QGIS, download the version compatible with your machine's operating system. MaxEnt is a Java-based application and runs using various operating systems. The procedures shown in this tutorial uses a Mac OSX platform but it should be applicable to other operating systems.
 
-##### Data
+#### Data
 MaxEnt will require two types of input datasets:
 
 1. **Species occurrence data.** The species occurrence records are the geographic point locations or coordinates of species observations. For this exercise, we will use the georeferenced database of selected threatened forest tree species in the Philippines compiled by [Ramos et al. (2011)](#ramos_etal_2011). Download the database from the World Agroforestry Centre/ICRAF Dataverse [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/24818).
 
 2. **Environmental predictors.** The environmental covariates consist of raster data that contain either continuous or categorical values such as precipitation, temperature, elevation, etc. We will be using the following raster datasets:
 
-- [WorldClim](http://www.worldclim.org): WorldClim is a set of gridded global climate data layers, which can be used for mapping and ecological modeling. For this exercise, we will use [WorldClim v.1.4 Current conditions](http://www.worldclim.org/current) (or interpolations of observed data from 1960-1990).
+    - [WorldClim](http://www.worldclim.org): WorldClim is a set of gridded global climate data layers, which can be used for mapping and ecological modeling. For this exercise, we will use [WorldClim v.1.4 Current conditions](http://www.worldclim.org/current) (or interpolations of observed data from 1960-1990). We will need the highest resolution data available provided at 30 arc-seconds (~1 km); hence click the `download by tile` link and choose Tile 210. After clicking the tile, download the GeoTIFF file formats of the [Altitude](http://biogeo.ucdavis.edu/data/climate/worldclim/1_4/tiles/cur/alt_210_tif.zip) (~2 MB) and [Bioclim](http://biogeo.ucdavis.edu/data/climate/worldclim/1_4/tiles/cur/bio_210_tif.zip) (~29 MB) layers.
 
 
 To prepare the datasets, we will also need **administrative boundary** data. We can use the administrative boundary vector data from the [Global Administrative Database](http://www.gadm.org/country). On GADM's Download landing page, select "Philippines" and "Shapefile" from the *Country* and *Format* drop-down menus, respectively.
