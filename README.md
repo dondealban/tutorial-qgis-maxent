@@ -35,18 +35,20 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 <a name="data_preparation"></a>
 ## Data Preparation
 
-1. First, we will create subsets from the environmental rasters to focus our modeling over our study area. To do this, we will create a polygon shapefile containing the extents of the study area and use this shapefile to clip all the raster map layers.
+1. First, we will create subsets from the environmental rasters to focus our modeling over our study area. To do this, we will create a polygon shapefile containing the extents of the study area and use this shapefile to clip all the raster map layers. Follow these steps using QGIS:
 
-    - Load the administrative boundary shapefile (PHL_adm2.shp) by adding a vector layer **`Layer > Add Layer > Add Vector Layer...`** menu. This displays the municipal-level administrative boundaries.
+    - Load the **PHL_adm2.shp** shapefile by adding a vector layer **`Layer > Add Layer > Add Vector Layer...`** menu. This displays the municipal-level administrative boundaries.
 
-    - To select our areas of interest, we will select the municipalities from the attribute table. Open the attribute table of PHL_adm2.shp by right-clicking the shapefile and select `Open Attribute Table`.
+    - To select our areas of interest, we will select the municipalities from the attribute table. Open the attribute table of **PHL_adm2.shp** by right-clicking the shapefile and then selecting **`Open Attribute Table`** from the menu.
 
-    - Click the `Select features using an expression` icon. Once the *Select by expression* dialog box opens, enter the following expression:
+    - Inside the attribute table window, click the `Select features using an expression` icon. Once the *Select by expression* dialog box opens, enter the following expression:
     ```
      "NAME_2"  = 'Polillo' OR  "NAME_2"  = 'Burdeos' OR  "NAME_2"  = 'Panukulan' OR  "NAME_2"  = 'Patnanungan' OR  "NAME_2"  = 'Jomalig'
     ```
 
-    check if you have selected five records, which includes the following municipalities: Polillo, Burdeos, Panukulan, Patnanungan, and Jomalig towns.  
+    This will select the municipalities belonging to our study area. Check the attribute table if you have selected five records, which includes the following municipalities: Polillo, Burdeos, Panukulan, Patnanungan, and Jomalig towns.  
+
+    - In the main QGIS window, right-click on **PHL_adm2.shp** and select **`SAve as...`** from the menu.
 
 
 
