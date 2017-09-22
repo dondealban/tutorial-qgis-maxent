@@ -1,5 +1,5 @@
 # A Short QGIS+MaxEnt Tutorial
-This repository contains a short tutorial for learning species distribution modeling using Quantum GIS and MaxEnt in half a day. I prepared this documentation for the skills training sessions during the lab retreat of the [Applied Plant Ecology Lab](https://www.appliedplantecology.org), Department of Biological Sciences, National University of Singapore held on 25-28 September 2017 in Malacca, Malaysia.
+This repository contains a short tutorial for learning species distribution modeling for conservation applications using Quantum GIS and MaxEnt in half a day. I prepared this documentation for the skills training sessions during the lab retreat of the [Applied Plant Ecology Lab](https://www.appliedplantecology.org), Department of Biological Sciences, National University of Singapore held on 25-28 September 2017 in Malacca, Malaysia.
 
 
 ## Table of Contents
@@ -20,14 +20,14 @@ MaxEnt will require two types of input datasets:
 
 1. **Species occurrence data.** The species occurrence records are the geographic point locations or coordinates of species observations. For this exercise, we will use the georeferenced database of selected threatened forest tree species in the Philippines compiled by [Ramos et al. (2011)](#ramos_etal_2011). Download the database from the World Agroforestry Centre/ICRAF Dataverse [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/24818) (150 KB, CSV file).
 
-2. **Environmental predictors.** The environmental covariates consist of raster data that contain either continuous or categorical values such as precipitation, temperature, elevation, etc. We will be using the [WorldClim](http://www.worldclim.org) raster datasets. WorldClim is a set of gridded global climate data layers, which can be used for mapping and ecological modeling. For this exercise, we will use [WorldClim v.1.4 Current conditions](http://www.worldclim.org/current) (or interpolations of observed data from 1960-1990). We will need the highest resolution data available provided at 30 arc-seconds (~1 km); hence click the `download by tile` link and choose Tile 210. After clicking the tile, download the GeoTIFF file formats of the [Altitude](http://biogeo.ucdavis.edu/data/climate/worldclim/1_4/tiles/cur/alt_210_tif.zip) (~2 MB, ZIP file) and [Bioclim](http://biogeo.ucdavis.edu/data/climate/worldclim/1_4/tiles/cur/bio_210_tif.zip) (~29 MB, ZIP file) layers. Read Hijmans et al. (2005) for more information about the climate data layers.
+2. **Environmental predictors.** The environmental covariates consist of raster data that contain either continuous or categorical values such as precipitation, temperature, elevation, etc. We will be using the [WorldClim](http://www.worldclim.org) raster datasets. WorldClim is a set of gridded global climate data layers, which can be used for mapping and ecological modeling. For this exercise, we will use [WorldClim v.1.4 Current conditions](http://www.worldclim.org/current) (or interpolations of observed data from 1960-1990). We will need the highest resolution data available provided at 30 arc-seconds (~1 km); hence click the `download by tile` link and choose Tile 210. After clicking the tile, download the GeoTIFF file formats of the [Altitude](http://biogeo.ucdavis.edu/data/climate/worldclim/1_4/tiles/cur/alt_210_tif.zip) (~2 MB, ZIP file) and [Bioclim](http://biogeo.ucdavis.edu/data/climate/worldclim/1_4/tiles/cur/bio_210_tif.zip) (~29 MB, ZIP file) layers. You can read [Hijmans et al. (2005)](#hijmans_etal_2005) for more information about the climate data layers.
 
 To prepare the datasets, we will also need **administrative boundary** data. We can use the administrative boundary vector data from the [Global Administrative Database](http://www.gadm.org/country). On GADM's Download page, select "Philippines" and "Shapefile" from the *Country* and *Format* drop-down menus, respectively, and click the [download](http://biogeo.ucdavis.edu/data/gadm2.8/shp/PHL_adm_shp.zip) link provided (~22 MB, ZIP file).
 
 
 <a name="study_area"></a>
 ## Study Area
-**Polillo Islands, Quezon Province, Philippines.** The Polillo Islands
+**Polillo Islands, Quezon Province, Philippines.** The Polillo group of islands (approx. 14.861 N, 122.038 E) is situated in the northeast part of the Philippine archipelago. The Polillos comprise 27 small islands and islets, 25km off the east coast of Luzon. They form part of the Luzon Endemic Bird Area (EBA), ranked sixth in the world listing of critical EBAs [(Stattersfield et al. 2000)](#stattersfield_etal_1998), whilst also constituting a highly distinct sub-centre of endemicity. Amongst these Polillo-specific endemics are a frog, several reptiles and seven birds, including a goshawk, hornbill, and parrots. The islands also support important populations of globally threatened species (e.g. Philippine cockatoo, Gray’s monitor lizard, Philippine jade vine), and are accorded high priority in all independent reviews of Philippine conservation priority areas. More information about the conservation priorities in the Polillos here.
 
 
 <a name="references"></a>
@@ -38,6 +38,9 @@ HIJMANS, R.J., CAMERON, S.E., PARRA, J.L., JONES, P.G. & JARVIS, A. (2005) Very 
 
 <a name="ramos_etal_2011"></a>
 RAMOS, L.T., TORRES, A.M., PULHIN, F.B. & LASCO, R.D. (2011) Developing a georeferenced database of selected threatened forest tree species in the Philippines. *Philippine Journal of Science*, 141, 165–177. [(PDF)](http://philjournalsci.dost.gov.ph/pdf/pjs%20pdf/vol141no2/pdf/Developing_a_Georeferenced_Database.pdf)
+
+<a name="stattersfield_etal_1998"></a>
+STATTERSFIELD, A.J., CROSBY, M., LONG, A.J. & WEGE, D.C. (1998) *Endemic Bird Areas of the World: Priorities for Biodiversity Conservation*. The Burlington Press, Ltd., Cambridge, United Kingdom.
 
 
 <a name="license"></a>
