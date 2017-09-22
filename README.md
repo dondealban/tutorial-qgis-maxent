@@ -5,4 +5,9 @@ This repository contains a short tutorial for learning species distribution mode
 
 
 ## Download and Installation
-For this tutorial, you will need to download and install the [QGIS](http://www.qgis.org/en/site/forusers/download.html) and [MaxEnt](https://biodiversityinformatics.amnh.org/open_source/maxent/) versions compatible with your machine's operating system. The procedures shown in this tutorial uses a Mac OSX platform but it should be applicable to other operating systems.  
+For this tutorial, you will need to download and install the [QGIS](http://www.qgis.org/en/site/forusers/download.html) and [MaxEnt](https://biodiversityinformatics.amnh.org/open_source/maxent/) versions compatible with your machine's operating system. The procedures shown in this tutorial uses a Mac OSX platform but it should be applicable to other operating systems.
+
+
+<a name="contribute"></a>
+## Want to Contribute?
+In case you wish to contribute or suggest changes, please feel free to fork this repository. Commit your changes and submit a pull request. Thanks.
