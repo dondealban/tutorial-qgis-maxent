@@ -47,7 +47,8 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
     ```
     ![data-prep1](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-01.png)
 
-    This will select the municipalities belonging to our study area. Check the attribute table if you have selected five records, which includes the following municipalities: Polillo, Burdeos, Panukulan, Patnanungan, and Jomalig towns.  
+    This will select the municipalities belonging to our study area. Check the attribute table if you have selected five records, which includes the following municipalities: Polillo, Burdeos, Panukulan, Patnanungan, and Jomalig towns.
+    ![data-prep2](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-02.png)
 
     - In the main QGIS window, right-click on **PHL_adm2.shp** and select **`Save As...`** from the menu. Once the **`Save vector layer as...`** dialog box opens, tick the `Save only selected features` to ensure that we save a new shapefile containing only the selected municipalities. Then, enter the file name of the output shapefile to your working directory, and click `OK`. The new shapefile should appear in the QGIS `Table of Contents` pane.
 
