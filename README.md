@@ -38,11 +38,11 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 
 1. First, we will create subsets from the environmental rasters to focus our modeling over our study area. To do this, we will create a polygon shapefile containing the extent of the study area and use this shapefile to clip all the raster map layers. Follow these steps using QGIS:
 
-    - Load the **PHL_adm2.shp** shapefile by adding a vector layer **`Layer > Add Layer > Add Vector Layer...`** menu. This displays the municipal-level administrative boundaries.
+    - Load the **PHL_adm2.shp** shapefile by adding a vector layer from the **`Layer > Add Layer > Add Vector Layer...`** menu. This displays the municipal-level administrative boundaries.
 
     ![data-prep1](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-01a.png)
 
-    - To select our areas of interest, we will select the municipalities from the attribute table. Open the attribute table of **PHL_adm2.shp** by right-clicking the shapefile within the `Layers Panel` and then selecting **`Open Attribute Table`** from the menu. Inside the attribute table window, click the `Select features using an expression` icon. Once the `Select by expression` dialog box opens, enter the following expression:
+    - To select our areas of interest, we will select the municipalities from the attribute table. Open the attribute table of **PHL_adm2.shp** by right-clicking the shapefile within the `Layers Panel` and then selecting **`Open Attribute Table`** from the menu. Inside the attribute table window, click the `Select features using an expression` icon. Once the **`Select by expression`** dialog box opens, enter the following expression:
     ```
      "NAME_2"  = 'Polillo' OR  "NAME_2"  = 'Burdeos' OR  "NAME_2"  = 'Panukulan' OR  "NAME_2"  = 'Patnanungan' OR  "NAME_2"  = 'Jomalig'
     ```
@@ -89,6 +89,18 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
     ```
 
     Here, note that the search terms used include the species name and the source of the data based on the database. Also, only columns 2, 10, and 11 were selected and saved in the final CSV file, which corresponds to the columns 'Species', 'Lat', and 'Long'.
+
+3. We are almost ready to create our first species distribution model. But before we do that, load all of the clipped environmental rasters and the species occurrence file in QGIS:
+
+    - Load the clipped raster layers by adding them from the **`Layer > Add Layer > Add Raster Layer...`** menu.
+    ![data-prep6](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-06.png)
+
+    - Load species occurrence CSV file by adding it from the **`Layer > Add Layer > Add Delimited Text Layer...`** menu.
+    ![data-prep7](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-07.png)
+
+    - In the **`Created a Layer from a Delimited Text File`** dialog box, select the CSV file by navigating to the file in your working directory. Once it is opened, the species records and their coordinates will be shown in the lower part of the dialog box. In the `X field` and `Y field` drop-down menus, select 'Long' and 'Lat' columns, respectively.
+    ![data-prep8](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-08.png)
+
 
 
 <a name="references"></a>
