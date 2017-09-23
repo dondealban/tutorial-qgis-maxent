@@ -45,6 +45,7 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
     ```
      "NAME_2"  = 'Polillo' OR  "NAME_2"  = 'Burdeos' OR  "NAME_2"  = 'Panukulan' OR  "NAME_2"  = 'Patnanungan' OR  "NAME_2"  = 'Jomalig'
     ```
+    ![data-prep1](https://github.com/dondealban/learning-stm/blob/master/outputs/stm-plot-prevfit-convergence.png)
 
     This will select the municipalities belonging to our study area. Check the attribute table if you have selected five records, which includes the following municipalities: Polillo, Burdeos, Panukulan, Patnanungan, and Jomalig towns.  
 
