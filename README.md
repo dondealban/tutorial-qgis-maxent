@@ -29,7 +29,8 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 
 <a name="study_area"></a>
 ## Study Area
-**Polillo Islands, Quezon Province, Philippines.** The Polillo group of islands (approx. 14.861 N, 122.038 E) is situated in the northeast part of the Philippine archipelago. The Polillos comprise 27 small islands and islets, 25km off the east coast of Luzon. They form part of the Luzon Endemic Bird Area (EBA), ranked sixth in the world listing of critical EBAs [(Stattersfield et al. 2000)](#stattersfield_etal_1998), whilst also constituting a highly distinct sub-centre of endemicity. Amongst these Polillo-specific endemics are a frog, several reptiles and seven birds, including a goshawk, hornbill, and parrots. The islands also support important populations of globally threatened species (e.g. Philippine cockatoo, Gray’s monitor lizard, Philippine jade vine), and are accorded high priority in all independent reviews of Philippine conservation priority areas. More information about the conservation priorities in the Polillos here.
+**Polillo Islands, Quezon Province, Philippines.** The Polillo group of islands (approx. 14.861 N, 122.038 E) is situated in the northeast part of the Philippine archipelago. The Polillos comprise 27 small islands and islets, 25km off the east coast of Luzon. They form part of the Luzon Endemic Bird Area (EBA), ranked sixth in the world listing of critical EBAs [(Stattersfield et al. 2000)](#stattersfield_etal_1998), whilst also constituting a highly distinct sub-centre of endemicity. Amongst these Polillo-specific endemics are a frog, several reptiles and seven birds, including a goshawk, hornbill, and parrots. The islands also support important populations of globally threatened species (e.g. Philippine cockatoo, Gray’s monitor lizard, Philippine jade vine), and are accorded high priority in all independent reviews of Philippine conservation priority areas. Open the image below to see more information about the conservation priorities in the Polillo Islands.
+
 
 
 <a name="data_preparation"></a>
@@ -38,10 +39,10 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 1. First, we will create subsets from the environmental rasters to focus our modeling over our study area. To do this, we will create a polygon shapefile containing the extent of the study area and use this shapefile to clip all the raster map layers. Follow these steps using QGIS:
 
     - Load the **PHL_adm2.shp** shapefile by adding a vector layer **`Layer > Add Layer > Add Vector Layer...`** menu. This displays the municipal-level administrative boundaries.
-    
-    ![data-prep1](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-01.png)
 
-    - To select our areas of interest, we will select the municipalities from the attribute table. Open the attribute table of **PHL_adm2.shp** by right-clicking the shapefile and then selecting **`Open Attribute Table`** from the menu. Inside the attribute table window, click the `Select features using an expression` icon. Once the `Select by expression` dialog box opens, enter the following expression:
+    ![data-prep1](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-01a.png)
+
+    - To select our areas of interest, we will select the municipalities from the attribute table. Open the attribute table of **PHL_adm2.shp** by right-clicking the shapefile within the `Layers Panel` and then selecting **`Open Attribute Table`** from the menu. Inside the attribute table window, click the `Select features using an expression` icon. Once the `Select by expression` dialog box opens, enter the following expression:
     ```
      "NAME_2"  = 'Polillo' OR  "NAME_2"  = 'Burdeos' OR  "NAME_2"  = 'Panukulan' OR  "NAME_2"  = 'Patnanungan' OR  "NAME_2"  = 'Jomalig'
     ```
@@ -50,9 +51,9 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
     This will select the municipalities belonging to our study area. Check the attribute table if you have selected five records, which includes the following municipalities: Polillo, Burdeos, Panukulan, Patnanungan, and Jomalig towns.
     ![data-prep3](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-03.png)
 
-    - In the main QGIS window, right-click on **PHL_adm2.shp** and select **`Save As...`** from the menu. Once the **`Save vector layer as...`** dialog box opens, tick the `Save only selected features` to ensure that we save a new shapefile containing only the selected municipalities. Then, enter the file name of the output shapefile to your working directory, and click `OK`. The new shapefile should appear in the QGIS `Table of Contents` pane.
+    - In the main QGIS window, right-click on **PHL_adm2.shp** and select **`Save As...`** from the menu. Once the **`Save vector layer as...`** dialog box opens, tick the `Save only selected features` to ensure that we save a new shapefile containing only the selected municipalities. Then, enter the file name of the output shapefile as **polillos.shp** to your working directory, and click `OK`. The new shapefile should appear in the QGIS `Layers Panel`.
 
-    - Then, we will create a polygon from the extent of the municipalities shapefile that we have just saved. Go to **`Vector > Research Tools > Polygon from Layer Extent`** menu.
+    - Next, we will create a polygon from the extent of the municipalities shapefile that we have just saved. Go to **`Vector > Research Tools > Polygon from Layer Extent`** menu.
 
       + Under the `Input Layer` drop-down menu, select the newly created study area shapefile.
       + Under the `Extent` input line, select **`Save to File`** from the menu to save the file in your working directory. Then, click `Run` to create another shapefile, which consists of a box covering the extent of the study area.
