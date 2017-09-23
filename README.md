@@ -38,17 +38,16 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 1. First, we will create subsets from the environmental rasters to focus our modeling over our study area. To do this, we will create a polygon shapefile containing the extent of the study area and use this shapefile to clip all the raster map layers. Follow these steps using QGIS:
 
     - Load the **PHL_adm2.shp** shapefile by adding a vector layer **`Layer > Add Layer > Add Vector Layer...`** menu. This displays the municipal-level administrative boundaries.
+    ![data-prep1](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-01.png)
 
-    - To select our areas of interest, we will select the municipalities from the attribute table. Open the attribute table of **PHL_adm2.shp** by right-clicking the shapefile and then selecting **`Open Attribute Table`** from the menu.
-
-    - Inside the attribute table window, click the `Select features using an expression` icon. Once the `Select by expression` dialog box opens, enter the following expression:
+    - To select our areas of interest, we will select the municipalities from the attribute table. Open the attribute table of **PHL_adm2.shp** by right-clicking the shapefile and then selecting **`Open Attribute Table`** from the menu. Inside the attribute table window, click the `Select features using an expression` icon. Once the `Select by expression` dialog box opens, enter the following expression:
     ```
      "NAME_2"  = 'Polillo' OR  "NAME_2"  = 'Burdeos' OR  "NAME_2"  = 'Panukulan' OR  "NAME_2"  = 'Patnanungan' OR  "NAME_2"  = 'Jomalig'
     ```
-    ![data-prep1](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-01.png)
+    ![data-prep2](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-02.png)
 
     This will select the municipalities belonging to our study area. Check the attribute table if you have selected five records, which includes the following municipalities: Polillo, Burdeos, Panukulan, Patnanungan, and Jomalig towns.
-    ![data-prep2](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-02.png)
+    ![data-prep3](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-03.png)
 
     - In the main QGIS window, right-click on **PHL_adm2.shp** and select **`Save As...`** from the menu. Once the **`Save vector layer as...`** dialog box opens, tick the `Save only selected features` to ensure that we save a new shapefile containing only the selected municipalities. Then, enter the file name of the output shapefile to your working directory, and click `OK`. The new shapefile should appear in the QGIS `Table of Contents` pane.
 
