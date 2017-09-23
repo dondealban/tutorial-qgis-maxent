@@ -107,13 +107,27 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 ## Model Species Distributions
 We are now ready to create our first species distribution model using MaxEnt.
 
-1. Open MaxEnt and load the `Samples` and `Environmental Layers` by navigating to the respective directories of those files.
+1. Open MaxEnt and load the `Samples` and `Environmental Layers` by navigating to the respective directories of those files. Ensure that the tick boxes of all files are checked, and that the `Environmental Layers` files are all 'Continuous' types.
 
 ![maxent1](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/maxent_01.png)
 
-2. Check the tick boxes of the following options:
+2. Also, in the main MaxEnt window, check tick boxes or select the following options:
 
-    -
+    - Linear/Quadratic/Product/Threshold/Hinge features
+    - Create response curves
+    - Make pictures of predictions
+    - Do jackknife to measure variable importance
+    - `Output format`: Logistic
+    - `Output file type`: asc
+
+Leave the other advanced settings in their default for now. Then, click `Run` and wait for the processing to finish.
+
+3. Once the MaxEnt software completes its data processing,
+
+    - Load the resulting **ASC** files in QGIS from the **`Layer > Add Layer > Add Raster Layer...`** menu. Then, change the styling of the raster layer by going to **`Layer > Properties...`** menu, or double-clicking on the layer under the `Layers Panel`.
+
+    ![maxent2](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/maxent_02.png)
+
 
 
 <a name="references"></a>
