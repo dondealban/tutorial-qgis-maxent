@@ -56,16 +56,18 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 
     - Next, we will create a polygon from the extent of the municipalities shapefile that we have just saved. Go to **`Vector > Research Tools > Polygon from Layer Extent`** menu.
 
-      + Under the `Input Layer` drop-down menu, select the newly created study area shapefile.
+      + Under the `Input Layer` drop-down menu, select the newly created **polillos.shp** shapefile.
       + Under the `Extent` input line, select **`Save to File`** from the menu to save the file in your working directory. Then, click `Run` to create another shapefile called **box.shp**, which consists of a polygon covering the extent of the study area.
 
     ![data-prep4](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-04.png)
 
     - Next, go to **`Processing > Toolbox`** menu, which opens a `Processing Toolbox` pane. Search for the `Clip raster with polygon` function under the SAGA geoalgorithms and select this function. This will open the **`Clip Raster with Polygon`** dialog box.
 
-      + Under the `Input` drop-down menu, select one of the raster layers, say **biol1_210.tif**.
-      + Under the `Polygons` drop-down menu, select the box polygon shapefile.
-      + Under the `Clipped` input line, select **`Save to File`** from the menu to save the file in your working directory. Change the output file type to **ASC** as this is the file type requirement used by MaxEnt. Then, click `Run` to generate the clipped raster file.
+      + Under the `Input` drop-down menu, navigate through your working directory and select one of the raster layers, say **biol1_210.tif**.
+      + Under the `Polygons` drop-down menu, select **box.shp** shapefile.
+      + Under the `Clipped` input line, select **`Save to File`** from the menu to save the file in your working directory using the same file name, but this time, change the output file type to **ASC** as this is the file type requirement used by MaxEnt. Then, click `Run` to generate the clipped raster file, **biol1_210.asc**.
+
+    ![data-prep5](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-05.png)
 
     Repeat this for all other raster layers by following the same process. You may also opt to run this through batch processing by clicking on the **`Run As a Batch Process...`** button.  
 
