@@ -91,6 +91,8 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 
     Here, note that the search terms used include the species name and the source of the data based on the database. Also, only columns 2, 10, and 11 were selected and saved in the final CSV file, which corresponds to the columns 'Species', 'Lat', and 'Long'.
 
+    Alternatively, you can download the [R script](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/Select.Species.R) and run this in R or RStudio.
+
 3. We are almost ready to create our first species distribution model. But before we do that, load all of the clipped environmental rasters and the species occurrence file in QGIS:
 
     - Load the clipped environmental raster layers by adding them from the **`Layer > Add Layer > Add Raster Layer...`** menu. Remember that these are the **.ASC** files.
@@ -122,7 +124,7 @@ We are now ready to create our first species distribution model using MaxEnt.
 
 Leave the other advanced settings in their default for now. Then, click `Run` and wait for the processing to finish.
 
-3. Once the MaxEnt software completes its data processing,
+3. Once the MaxEnt software completes its data processing:
 
     - Load the resulting **ASC** files in QGIS from the **`Layer > Add Layer > Add Raster Layer...`** menu. Then, change the styling of the raster layer by going to **`Layer > Properties...`** menu, or double-clicking on the layer under the `Layers Panel`.
 
