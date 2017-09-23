@@ -7,6 +7,7 @@ This repository contains a short tutorial for creating a species distribution mo
 - [Study Area](#study_area)
 - [Prepare Datasets](#prepare_datasets)
 - [Model Species Distributions](#model_species_distribution)
+- [Further Reading](#further_reading)
 - [References](#references)
 - [License](#license)
 - [Want to Contribute?](#contribute)
@@ -137,22 +138,23 @@ Leave the other advanced settings in their default for now. Then, click `Run` an
 **Congratulations!** You have now made your first species distribution model using QGIS, R, and MaxEnt.
 
 
-<a name="references"></a>
+<a name="further_reading"></a>
 ## Further Reading
 To learn more about MaxEnt such as analysing and interpreting MaxEnt's outputs, adjusting model settings, etc. the following materials are suggested for further reading:
+
 
 
 <a name="references"></a>
 ## References
 
 <a name="hijmans_etal_2005"></a>
-HIJMANS, R.J., CAMERON, S.E., PARRA, J.L., JONES, P.G. & JARVIS, A. (2005) Very high resolution interpolated climate surfaces for global land areas. *International Journal of Climatology*, 25, 1965–1978. [(DOI)](https://dx.doi.org/10.1002/joc.1276)
+Hijmans, R.J., Cameron, S.E., Parra, J.L., Jones, P.G. & Jarvis, A. (2005) Very high resolution interpolated climate surfaces for global land areas. *International Journal of Climatology*, 25, 1965–1978. [(DOI)](https://dx.doi.org/10.1002/joc.1276)
 
 <a name="ramos_etal_2011"></a>
-RAMOS, L.T., TORRES, A.M., PULHIN, F.B. & LASCO, R.D. (2011) Developing a georeferenced database of selected threatened forest tree species in the Philippines. *Philippine Journal of Science*, 141, 165–177. [(PDF)](http://philjournalsci.dost.gov.ph/pdf/pjs%20pdf/vol141no2/pdf/Developing_a_Georeferenced_Database.pdf)
+Ramos, L.T., Torres, A.M., Pulhin, F.B. & Lasco, R.D. (2011) Developing a georeferenced database of selected threatened forest tree species in the Philippines. *Philippine Journal of Science*, 141, 165–177. [(PDF)](http://philjournalsci.dost.gov.ph/pdf/pjs%20pdf/vol141no2/pdf/Developing_a_Georeferenced_Database.pdf)
 
 <a name="stattersfield_etal_1998"></a>
-STATTERSFIELD, A.J., CROSBY, M., LONG, A.J. & WEGE, D.C. (1998) *Endemic Bird Areas of the World: Priorities for Biodiversity Conservation*. The Burlington Press, Ltd., Cambridge, United Kingdom.
+Stattersfield, A.J., Crosby, M., Long, A.J. & Wege, D.C. (1998) *Endemic Bird Areas of the World: Priorities for Biodiversity Conservation*. The Burlington Press, Ltd., Cambridge, United Kingdom.
 
 
 <a name="license"></a>
