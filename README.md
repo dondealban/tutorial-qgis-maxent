@@ -1,5 +1,5 @@
 # A Short Species Distribution Modeling Tutorial
-This repository contains a short tutorial for learning species distribution modeling for conservation applications using Quantum GIS, R, and MaxEnt in half a day. I prepared this documentation for the skills training sessions during the lab retreat of the [Applied Plant Ecology Lab](https://www.appliedplantecology.org), Department of Biological Sciences, National University of Singapore held on 25-28 September 2017 in Malacca, Malaysia.
+This repository contains a short tutorial for creating a species distribution model using QGIS, R, and MaxEnt. I prepared this documentation for the skills training sessions during the lab retreat of the [Applied Plant Ecology Lab](https://www.appliedplantecology.org), Department of Biological Sciences, National University of Singapore held on 25-28 September 2017 in Malacca, Malaysia.
 
 
 ## Table of Contents
@@ -126,10 +126,20 @@ Leave the other advanced settings in their default for now. Then, click `Run` an
 
 3. Once the MaxEnt software completes its data processing:
 
-    - Load the resulting **ASC** files in QGIS from the **`Layer > Add Layer > Add Raster Layer...`** menu. Then, change the styling of the raster layer by going to **`Layer > Properties...`** menu, or double-clicking on the layer under the `Layers Panel`.
+    - Load the resulting **ASC** file in QGIS from the **`Layer > Add Layer > Add Raster Layer...`** menu. Then, change the styling of the raster layer by going to **`Layer > Properties...`** menu, or double-clicking on the layer under the `Layers Panel`. Change the styling of the raster layer as shown on the image below. Alternatively, you can also load the layer styling using this [QML](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/sdm_logistic.qml) file (only applicable to the logistic model output).
 
     ![maxent2](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/maxent_02.png)
 
+    The styling of the raster layer has been changed similar to the image below, which shows the logistic output of the MaxEnt's species distribution model.
+
+    ![maxent3](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/maxent_03.png)
+
+**Congratulations!** You have now made your first species distribution model using QGIS, R, and MaxEnt.
+
+
+<a name="references"></a>
+## Further Reading
+To learn more about MaxEnt such as analysing and interpreting MaxEnt's outputs, adjusting model settings, etc. the following materials are suggested for further reading:
 
 
 <a name="references"></a>
