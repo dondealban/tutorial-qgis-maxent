@@ -1,5 +1,5 @@
 # A Short Species Distribution Modeling Tutorial
-This repository contains a short tutorial for learning species distribution modeling for conservation applications using Quantum GIS and MaxEnt in half a day. I prepared this documentation for the skills training sessions during the lab retreat of the [Applied Plant Ecology Lab](https://www.appliedplantecology.org), Department of Biological Sciences, National University of Singapore held on 25-28 September 2017 in Malacca, Malaysia.
+This repository contains a short tutorial for learning species distribution modeling for conservation applications using Quantum GIS, R, and MaxEnt in half a day. I prepared this documentation for the skills training sessions during the lab retreat of the [Applied Plant Ecology Lab](https://www.appliedplantecology.org), Department of Biological Sciences, National University of Singapore held on 25-28 September 2017 in Malacca, Malaysia.
 
 
 ## Table of Contents
@@ -15,7 +15,7 @@ This repository contains a short tutorial for learning species distribution mode
 ## Download and Installation
 
 #### Software
-For this tutorial, download and install [QGIS](http://www.qgis.org/en/site/forusers/download.html) and [MaxEnt](https://biodiversityinformatics.amnh.org/open_source/maxent/), both of which are free and open-source software. For QGIS, download the version compatible with your machine's operating system. MaxEnt is a Java-based application and runs using various operating systems. The procedures shown in this tutorial uses a Mac OSX platform but it should be applicable to other operating systems.
+For this tutorial, download and install [QGIS](http://www.qgis.org/en/site/forusers/download.html), [R](https://www.r-project.org), and [MaxEnt](https://biodiversityinformatics.amnh.org/open_source/maxent/), all of which are free and open-source software. For QGIS and R, download the versions compatible with your machine's operating system. MaxEnt is a Java-based application and runs using various operating systems. The procedures shown in this tutorial uses a Mac OSX platform but it should be applicable to other operating systems.
 
 #### Data
 MaxEnt will require two types of input datasets:
@@ -74,7 +74,21 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 2. Next, we will extract the occurrence points of the species we are interested in modeling.
 
     - Inspect the threatened tree species database using tools like R or Excel. For this exercise, let us model the distributions of `Cinnamomum mercadoi` that were observed in the Polillo Islands.
-    
+
+    - To select the species from the CSV file, we will use a few lines of code in R as follows:
+    ```R
+    # This line reads the CSV file and stores it in a variable
+    # Note: change file path to your working directory
+    data <- read.csv(file="Geoferenced_threatenedforesttreespecies.csv", header=TRUE, sep=",")
+
+    # This line selects the species in our study area and stores it in a variable
+    polillo_cm <- subset(data, Species=="Cinnamomum mercadoi" & Source=="Clements, 2001", select=c(2,10:11))
+
+    # This line saves the selected species in a CSV file
+    write.csv(polillo_cm, file="polillo_cm.csv", row.names=FALSE)
+    ```
+
+    Here, note that the search terms used include the species name and the source of the data based on the database. Also, only columns 2, 10, and 11 were selected and saved in the final CSV file, which corresponds to the columns 'Species', 'Lat', and 'Long'.
 
 
 <a name="references"></a>
