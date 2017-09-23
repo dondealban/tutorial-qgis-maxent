@@ -61,10 +61,10 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 
     ![data-prep4](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-04.png)
 
-    - Next, go to **`Processing > Toolbox`** menu, which opens a `Processing Toolbox` panel. Search for the `Clip raster with polygon` function under the SAGA geoalgorithms and select this function. This will open the **`Clip Raster with Polygon`** dialog box.
+    - Next, go to **`Processing > Toolbox`** menu, which opens a `Processing Toolbox` panel. Search for the `Clip raster by extent` function under the GDAL Extraction geoalgorithms and select this function. This will open the **`Clip Raster by Extent`** dialog box.
 
-      + Under the `Input` drop-down menu, navigate through your working directory and select one of the raster layers, say **biol1_210.tif**.
-      + Under the `Polygons` drop-down menu, select **box.shp** shapefile.
+      + Under the `Input Layer` drop-down menu, click `...` and navigate through your working directory and select one of the raster layers, say **biol1_210.tif**.
+      + Under the `Clipping Extent` input line, click `...` and choose `Use layer/canvas extent` then use extent from the **box.shp** shapefile by selecting it from the drop-down menu.
       + Under the `Clipped` input line, select **`Save to File`** from the menu to save the file in your working directory using the same file name, but this time, change the output file type to **ASC** as this is the file type requirement used by MaxEnt. Then, click `Run` to generate the clipped raster file, **biol1_210.asc**.
 
     ![data-prep5](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-05.png)
