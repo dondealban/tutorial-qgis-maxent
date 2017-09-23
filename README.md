@@ -31,7 +31,7 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 ## Study Area
 **Polillo Islands, Quezon Province, Philippines.** The Polillo group of islands (approx. 14.861 N, 122.038 E) is situated in the northeast part of the Philippine archipelago. The Polillos comprise 27 small islands and islets, 25km off the east coast of Luzon. They form part of the Luzon Endemic Bird Area (EBA), ranked sixth in the world listing of critical EBAs [(Stattersfield et al. 2000)](#stattersfield_etal_1998), whilst also constituting a highly distinct sub-centre of endemicity. Amongst these Polillo-specific endemics are a frog, several reptiles and seven birds, including a goshawk, hornbill, and parrots. The islands also support important populations of globally threatened species (e.g. Philippine cockatoo, Gray’s monitor lizard, Philippine jade vine), and are accorded high priority in all independent reviews of Philippine conservation priority areas. Open the image below to see more information about the conservation priorities in the Polillo Islands.
 
-
+![study-area](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/poster/WCSPposter.jpg)
 
 <a name="data_preparation"></a>
 ## Data Preparation
@@ -43,6 +43,7 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
     ![data-prep1](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-01a.png)
 
     - To select our areas of interest, we will select the municipalities from the attribute table. Open the attribute table of **PHL_adm2.shp** by right-clicking the shapefile within the `Layers Panel` and then selecting **`Open Attribute Table`** from the menu. Inside the attribute table window, click the `Select features using an expression` icon. Once the `Select by expression` dialog box opens, enter the following expression:
+
     ```
      "NAME_2"  = 'Polillo' OR  "NAME_2"  = 'Burdeos' OR  "NAME_2"  = 'Panukulan' OR  "NAME_2"  = 'Patnanungan' OR  "NAME_2"  = 'Jomalig'
     ```
