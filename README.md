@@ -67,7 +67,7 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
       + Under the `Clipping Extent` input line, click `...` and choose `Use layer/canvas extent` then use extent from the **box.shp** shapefile by selecting it from the drop-down menu.
       + Under the `Clipped` input line, select **`Save to File`** from the menu to save the file in your working directory using the same file name, but this time, change the output file type to **ASC** as this is the file type requirement used by MaxEnt. Then, click `Run` to generate the clipped raster file, **biol1_210.asc**.
 
-    ![data-prep5](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-05.png)
+    ![data-prep5](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-05a.png)
 
     Repeat this for all other raster layers by following the same process. You may also opt to run this through batch processing by clicking on the **`Run As a Batch Process...`** button.  
 
