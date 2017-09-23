@@ -43,10 +43,10 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
     ![data-prep1](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-01a.png)
 
     - To select our areas of interest, we will select the municipalities from the attribute table. Open the attribute table of **PHL_adm2.shp** by right-clicking the shapefile within the `Layers Panel` and then selecting **`Open Attribute Table`** from the menu. Inside the attribute table window, click the `Select features using an expression` icon. Once the `Select by expression` dialog box opens, enter the following expression:
-
     ```
      "NAME_2"  = 'Polillo' OR  "NAME_2"  = 'Burdeos' OR  "NAME_2"  = 'Panukulan' OR  "NAME_2"  = 'Patnanungan' OR  "NAME_2"  = 'Jomalig'
     ```
+
     ![data-prep2](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-02.png)
 
     This will select the municipalities belonging to our study area. Check the attribute table if you have selected five records, which includes the following municipalities: Polillo, Burdeos, Panukulan, Patnanungan, and Jomalig towns.
@@ -57,7 +57,9 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
     - Next, we will create a polygon from the extent of the municipalities shapefile that we have just saved. Go to **`Vector > Research Tools > Polygon from Layer Extent`** menu.
 
       + Under the `Input Layer` drop-down menu, select the newly created study area shapefile.
-      + Under the `Extent` input line, select **`Save to File`** from the menu to save the file in your working directory. Then, click `Run` to create another shapefile, which consists of a box covering the extent of the study area.
+      + Under the `Extent` input line, select **`Save to File`** from the menu to save the file in your working directory. Then, click `Run` to create another shapefile called **box.shp**, which consists of a polygon covering the extent of the study area.
+
+    ![data-prep4](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-04.png)
 
     - Next, go to **`Processing > Toolbox`** menu, which opens a `Processing Toolbox` pane. Search for the `Clip raster with polygon` function under the SAGA geoalgorithms and select this function. This will open the **`Clip Raster with Polygon`** dialog box.
 
