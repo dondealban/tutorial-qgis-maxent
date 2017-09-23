@@ -1,4 +1,4 @@
-# A Short QGIS+MaxEnt Tutorial
+# A Short Species Distribution Modeling Tutorial
 This repository contains a short tutorial for learning species distribution modeling for conservation applications using Quantum GIS and MaxEnt in half a day. I prepared this documentation for the skills training sessions during the lab retreat of the [Applied Plant Ecology Lab](https://www.appliedplantecology.org), Department of Biological Sciences, National University of Singapore held on 25-28 September 2017 in Malacca, Malaysia.
 
 
@@ -61,15 +61,21 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 
     ![data-prep4](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-04.png)
 
-    - Next, go to **`Processing > Toolbox`** menu, which opens a `Processing Toolbox` panel. Search for the `Clip raster by extent` function under the GDAL Extraction geoalgorithms and select this function. This will open the **`Clip Raster by Extent`** dialog box.
+    - Next, go to **`Processing > Toolbox`** menu, which opens the `Processing Toolbox` panel. Search for the `Clip raster with polygon` function under the SAGA geoalgorithms and select this function. This will open the **`Clip Raster with Polygon`** dialog box.
 
-      + Under the `Input Layer` drop-down menu, click `...` and navigate through your working directory and select one of the raster layers, say **biol1_210.tif**.
-      + Under the `Clipping Extent` input line, click `...` and choose `Use layer/canvas extent` then use extent from the **box.shp** shapefile by selecting it from the drop-down menu.
-      + Under the `Clipped` input line, select **`Save to File`** from the menu to save the file in your working directory using the same file name, but this time, change the output file type to **ASC** as this is the file type requirement used by MaxEnt. Then, click `Run` to generate the clipped raster file, **biol1_210.asc**.
+      + Under the `Input` drop-down menu, click `...` and navigate through your working directory and select one of the raster layers, say **biol1_210.tif**.
+      + Under the `Polygons` input line, select the **box.shp** shapefile from the drop-down menu. The rasters will be clipped using the extent of this polygon.
+      + Under the `Clipped` input line, click `...` and select **`Save to File`** from the menu to save the file in your working directory using the same file name, but this time, change the output file type to **ASC** as this is the file type requirement used by MaxEnt. Then, click `Run` to generate the clipped raster file, **biol1_210.asc**.
 
-    ![data-prep5](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-05a.png)
+    ![data-prep5](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-05.png)
 
-    Repeat this for all other raster layers by following the same process. You may also opt to run this through batch processing by clicking on the **`Run As a Batch Process...`** button.  
+    Repeat this for all other raster layers by following the same process. You may also opt to run this through batch processing by clicking on the **`Run As a Batch Process...`** button.
+
+2. Next, we will extract the occurrence points of the species we are interested in modeling.
+
+    - Inspect the threatened tree species database using tools like R or Excel. For this exercise, let us model the distributions of `Cinnamomum mercadoi` that were observed in the Polillo Islands.
+    
+
 
 <a name="references"></a>
 ## References
