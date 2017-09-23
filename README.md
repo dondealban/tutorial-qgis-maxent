@@ -61,7 +61,7 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 
     ![data-prep4](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-04.png)
 
-    - Next, go to **`Processing > Toolbox`** menu, which opens a `Processing Toolbox` pane. Search for the `Clip raster with polygon` function under the SAGA geoalgorithms and select this function. This will open the **`Clip Raster with Polygon`** dialog box.
+    - Next, go to **`Processing > Toolbox`** menu, which opens a `Processing Toolbox` panel. Search for the `Clip raster with polygon` function under the SAGA geoalgorithms and select this function. This will open the **`Clip Raster with Polygon`** dialog box.
 
       + Under the `Input` drop-down menu, navigate through your working directory and select one of the raster layers, say **biol1_210.tif**.
       + Under the `Polygons` drop-down menu, select **box.shp** shapefile.
