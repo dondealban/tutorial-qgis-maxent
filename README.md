@@ -5,7 +5,8 @@ This repository contains a short tutorial for learning species distribution mode
 ## Table of Contents
 - [Download and Installation](#download)
 - [Study Area](#study_area)
-- [Data Preparation](#data_preparation)
+- [Prepare Datasets](#prepare_datasets)
+- [Model Species Distributions](#model_species_distribution)
 - [References](#references)
 - [License](#license)
 - [Want to Contribute?](#contribute)
@@ -33,8 +34,8 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 
 ![study-area](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/poster/WCSPposter.jpg)
 
-<a name="data_preparation"></a>
-## Data Preparation
+<a name="prepare_datasets"></a>
+## Prepare Datasets
 
 1. First, we will create subsets from the environmental rasters to focus our modeling over our study area. To do this, we will create a polygon shapefile containing the extent of the study area and use this shapefile to clip all the raster map layers. Follow these steps using QGIS:
 
@@ -92,15 +93,27 @@ To prepare the datasets, we will also need **administrative boundary** data. We 
 
 3. We are almost ready to create our first species distribution model. But before we do that, load all of the clipped environmental rasters and the species occurrence file in QGIS:
 
-    - Load the clipped raster layers by adding them from the **`Layer > Add Layer > Add Raster Layer...`** menu.
+    - Load the clipped environmental raster layers by adding them from the **`Layer > Add Layer > Add Raster Layer...`** menu. Remember that these are the **.ASC** files.
     ![data-prep6](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-06.png)
 
-    - Load species occurrence CSV file by adding it from the **`Layer > Add Layer > Add Delimited Text Layer...`** menu.
+    - Load species occurrence data CSV file by adding it from the **`Layer > Add Layer > Add Delimited Text Layer...`** menu.
     ![data-prep7](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-07.png)
 
-    - In the **`Created a Layer from a Delimited Text File`** dialog box, select the CSV file by navigating to the file in your working directory. Once it is opened, the species records and their coordinates will be shown in the lower part of the dialog box. In the `X field` and `Y field` drop-down menus, select 'Long' and 'Lat' columns, respectively.
+    - In the **`Create a Layer from a Delimited Text File`** dialog box, select the CSV file by navigating to the file in your working directory. Once it is opened, the species records and their coordinates will be shown in the lower part of the dialog box. In the `X field` and `Y field` drop-down menus, select 'Long' and 'Lat' columns, respectively.
     ![data-prep8](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/qgis_data-prep-08.png)
 
+
+<a name="model_species_distribution"></a>
+## Model Species Distributions
+We are now ready to create our first species distribution model using MaxEnt.
+
+1. Open MaxEnt and load the `Samples` and `Environmental Layers` by navigating to the respective directories of those files.
+
+![maxent1](https://github.com/dondealban/tutorial-qgis-maxent/blob/master/screenshots/maxent_01.png)
+
+2. Check the tick boxes of the following options:
+
+    -
 
 
 <a name="references"></a>
