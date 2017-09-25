@@ -142,17 +142,17 @@ Leave the other advanced settings in their default for now. Then, click `Run` an
 ## Further Reading
 To learn more about MaxEnt such as analysing and interpreting MaxEnt's outputs, adjusting model settings, etc. the following materials are suggested for further reading:
 
-Elith, J., Graham, C.H., Anderson, R.P., Dudik, M., Ferrier, S., Guisan, A., et al. (2006) Novel methods improve prediction of species’ distributions from occurrence data. Ecography, 29, 129–151.
+Elith, J., Graham, C.H., Anderson, R.P., Dudik, M., Ferrier, S., Guisan, A., et al. (2006) Novel methods improve prediction of species’ distributions from occurrence data. Ecography, 29, 129–151. [(DOI)](https://dx.doi.org/10.1111/j.2006.0906-7590.04596.x)
 
-Merow, C., Smith, M.J. & Silander, J.A. (2013) A practical guide to MaxEnt for modeling species’ distributions: what it does, and why inputs and settings matter. Ecography, 36, 1058–1069.
+Merow, C., Smith, M.J. & Silander, J.A. (2013) A practical guide to MaxEnt for modeling species’ distributions: what it does, and why inputs and settings matter. Ecography, 36, 1058–1069. [(DOI)](https://dx.doi.org/10.1111/j.1600-0587.2013.07872.x)
 
-Morales, N.S., Fernandez, I.C. & Baca-Gonzalez, V. (2017) MaxEnt’s parameter configuration and small samples: are we paying attention to recommendations? A systematic review. PeerJ, 5, e3093.
+Morales, N.S., Fernandez, I.C. & Baca-Gonzalez, V. (2017) MaxEnt’s parameter configuration and small samples: are we paying attention to recommendations? A systematic review. PeerJ, 5, e3093. [(DOI)](https://dx.doi.org/10.7717/peerj.3093)
 
-Phillips, S.J., Anderson, R.P., Dudik, M., Schapire, R.E. & Blair, M.E. (2017) Opening the black box: an open-source release of Maxent. Ecography, 40, 887–893.
+Phillips, S.J., Anderson, R.P., Dudik, M., Schapire, R.E. & Blair, M.E. (2017) Opening the black box: an open-source release of Maxent. Ecography, 40, 887–893.[(DOI)](https://dx.doi.org/10.1111/ecog.03049)
 
-Phillips, S.J., Anderson, R.P. & Schapire, R.E. (2006) Maximum entropy modeling of species geographic distributions. Ecological Modelling, 190, 231–259.
+Phillips, S.J., Anderson, R.P. & Schapire, R.E. (2006) Maximum entropy modeling of species geographic distributions. Ecological Modelling, 190, 231–259. [(DOI)](https://dx.doi.org/10.1016/j.ecolmodel.2005.03.026)
 
-Yackulic, C.B., Chandler, R., Zipkin, E.F., Royle, J.A., Nichols, J.D., Campbell Grant, E.H. & Veran, S. (2013) Presence-only modelling using MAXENT: when can we trust the inferences? Methods in Ecology and Evolution, 4, 236–243.
+Yackulic, C.B., Chandler, R., Zipkin, E.F., Royle, J.A., Nichols, J.D., Campbell Grant, E.H. & Veran, S. (2013) Presence-only modelling using MAXENT: when can we trust the inferences? Methods in Ecology and Evolution, 4, 236–243. [(DOI)](https://dx.doi.org/10.1111/2041-210x.12004)
 
 
 <a name="references"></a>
