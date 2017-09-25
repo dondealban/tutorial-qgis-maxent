@@ -142,6 +142,17 @@ Leave the other advanced settings in their default for now. Then, click `Run` an
 ## Further Reading
 To learn more about MaxEnt such as analysing and interpreting MaxEnt's outputs, adjusting model settings, etc. the following materials are suggested for further reading:
 
+Elith, J., Graham, C.H., Anderson, R.P., Dudik, M., Ferrier, S., Guisan, A., et al. (2006) Novel methods improve prediction of species’ distributions from occurrence data. Ecography, 29, 129–151.
+
+Merow, C., Smith, M.J. & Silander, J.A. (2013) A practical guide to MaxEnt for modeling species’ distributions: what it does, and why inputs and settings matter. Ecography, 36, 1058–1069.
+
+Morales, N.S., Fernandez, I.C. & Baca-Gonzalez, V. (2017) MaxEnt’s parameter configuration and small samples: are we paying attention to recommendations? A systematic review. PeerJ, 5, e3093.
+
+Phillips, S.J., Anderson, R.P., Dudik, M., Schapire, R.E. & Blair, M.E. (2017) Opening the black box: an open-source release of Maxent. Ecography, 40, 887–893.
+
+Phillips, S.J., Anderson, R.P. & Schapire, R.E. (2006) Maximum entropy modeling of species geographic distributions. Ecological Modelling, 190, 231–259.
+
+Yackulic, C.B., Chandler, R., Zipkin, E.F., Royle, J.A., Nichols, J.D., Campbell Grant, E.H. & Veran, S. (2013) Presence-only modelling using MAXENT: when can we trust the inferences? Methods in Ecology and Evolution, 4, 236–243.
 
 
 <a name="references"></a>
