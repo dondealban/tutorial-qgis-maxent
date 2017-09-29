@@ -1,0 +1,97 @@
+<title>Maxent model for Cinnamomum_mercadoi</title>
+<CENTER><H1>Maxent model for Cinnamomum_mercadoi</H1></CENTER>
+<br> This page contains some analysis of the Maxent model for Cinnamomum_mercadoi, created Sat Sep 23 12:51:51 SGT 2017 using Maxent version 3.3.3k.  If you would like to do further analyses, the raw data used here is linked to at the end of this page.<br>
+<br><HR><H2>Analysis of omission/commission</H2>
+The following picture shows the omission rate and predicted area as a function of the cumulative threshold.  The omission rate is is calculated both on the training presence records, and (if test data are used) on the test records.  The omission rate should be close to the predicted omission, because of the definition of the cumulative threshold.
+<br><img src="plots/Cinnamomum_mercadoi_omission.png"><br>
+<br> The next picture is the receiver operating characteristic (ROC) curve for the same data.  Note that the specificity is defined using predicted area, rather than true commission (see the paper by Phillips, Anderson and Schapire cited on the help page for discussion of what this means).  This implies that the maximum achievable AUC is less than 1.  If test data is drawn from the Maxent distribution itself, then the maximum possible test AUC would be 0.759 rather than 1; in practice the test AUC may exceed this bound.
+<br><img src="plots/Cinnamomum_mercadoi_roc.png"><br>
+<br>
+<br>
+Some common thresholds and corresponding omission rates are as follows.  If test data are available, binomial probabilities are calculated exactly if the number of test samples is at most 25, otherwise using a normal approximation to the binomial.  These are 1-sided p-values for the null hypothesis that test points are predicted no better than by a random prediction with the same fractional predicted area.  The "Balance" threshold minimizes 6 * training omission rate + .04 * cumulative threshold + 1.6 * fractional predicted area.<br>
+<br><table border cols=4 cellpadding=3><tr><th>Cumulative threshold</th><th>Logistic threshold</th><th>Description</th><th>Fractional predicted area</th><th>Training omission rate</th><tr align=center><td>1.000</td><td>0.070</td><td>Fixed cumulative value 1</td><td>0.888</td><td>0.000</td><tr align=center><td>5.000</td><td>0.156</td><td>Fixed cumulative value 5</td><td>0.683</td><td>0.000</td><tr align=center><td>10.000</td><td>0.215</td><td>Fixed cumulative value 10</td><td>0.541</td><td>0.000</td><tr align=center><td>16.938</td><td>0.327</td><td>Minimum training presence</td><td>0.423</td><td>0.000</td><tr align=center><td>20.587</td><td>0.362</td><td>10 percentile training presence</td><td>0.379</td><td>0.067</td><tr align=center><td>36.144</td><td>0.511</td><td>Equal training sensitivity and specificity</td><td>0.258</td><td>0.267</td><tr align=center><td>16.938</td><td>0.327</td><td>Maximum training sensitivity plus specificity</td><td>0.423</td><td>0.000</td><tr align=center><td>9.046</td><td>0.202</td><td>Balance training omission, predicted area and threshold value</td><td>0.565</td><td>0.000</td><tr align=center><td>6.458</td><td>0.173</td><td>Equate entropy of thresholded and original distributions</td><td>0.636</td><td>0.000</td></table><br>
+<br><HR><H2>Pictures of the model</H2>
+This is a representation of the Maxent model for Cinnamomum_mercadoi.  Warmer colors show areas with better predicted conditions.  White dots show the presence locations used for training, while violet dots show test locations.  Click on the image for a full-size version.<br>
+<br><a href = "plots/Cinnamomum_mercadoi.png"> <img src="plots/Cinnamomum_mercadoi.png" width=600></a><br>
+<br>(A link to the Explain tool was not made for this model.  The model uses product features, while the Explain tool can only be used for additive models.)<br><br>
+<br><HR><H2>Response curves</H2>
+<br>These curves show how each environmental variable affects the Maxent prediction.
+The 
+curves show how the logistic prediction changes as each environmental variable is varied, keeping all other environmental variables at their average sample value. Click on a response curve to see a larger version.  Note that the curves can be hard to interpret if you have strongly correlated variables, as the model may depend on the correlations in ways that are not evident in the curves.  In other words, the curves show the marginal effect of changing exactly one variable, whereas the model may take advantage of sets of variables changing together.<br><br>
+<a href = "plots/Cinnamomum_mercadoi_pol_alt.png"> <img src="plots/Cinnamomum_mercadoi_pol_alt_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio1.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio1_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio10.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio10_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio11.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio11_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio12.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio12_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio13.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio13_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio14.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio14_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio15.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio15_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio16.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio16_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio17.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio17_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio18.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio18_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio19.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio19_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio2.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio2_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio3.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio3_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio4.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio4_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio5.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio5_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio6.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio6_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio7.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio7_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio8.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio8_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio9.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio9_thumb.png"></a>
+<br>
+<br>In contrast to the above marginal response curves, each of the following curves represents a different model, namely, a Maxent model created using only the corresponding variable.  These plots reflect the dependence of predicted suitability both on the selected variable and on dependencies induced by correlations between the selected variable and other variables.  They may be easier to interpret if there are strong correlations between variables.<br><br>
+<a href = "plots/Cinnamomum_mercadoi_pol_alt_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_alt_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio1_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio1_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio10_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio10_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio11_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio11_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio12_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio12_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio13_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio13_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio14_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio14_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio15_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio15_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio16_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio16_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio17_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio17_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio18_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio18_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio19_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio19_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio2_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio2_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio3_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio3_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio4_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio4_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio5_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio5_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio6_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio6_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio7_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio7_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio8_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio8_only_thumb.png"></a>
+<a href = "plots/Cinnamomum_mercadoi_pol_bio9_only.png"> <img src="plots/Cinnamomum_mercadoi_pol_bio9_only_thumb.png"></a>
+<br>
+<br><HR><H2>Analysis of variable contributions</H2><br>
+The following table gives estimates of relative contributions of the environmental variables to the Maxent model.  To determine the first estimate, in each iteration of the training algorithm, the increase in regularized gain is added to the contribution of the corresponding variable, or subtracted from it if the change to the absolute value of lambda is negative.  For the second estimate, for each environmental variable in turn, the values of that variable on training presence and background data are randomly permuted.  The model is reevaluated on the permuted data, and the resulting drop in training AUC is shown in the table, normalized to percentages.  As with the variable jackknife, variable contributions should be interpreted with caution when the predictor variables are correlated.<br>
+<br><table border cols=3><tr><th>Variable</th><th>Percent contribution</th><th>Permutation importance</th><tr align=right><td>pol_alt</td><td>45.4</td><td>3.2</td></tr><tr align=right><td>pol_bio18</td><td>24.2</td><td>40.9</td></tr><tr align=right><td>pol_bio2</td><td>21.9</td><td>19.7</td></tr><tr align=right><td>pol_bio10</td><td>2.5</td><td>0</td></tr><tr align=right><td>pol_bio12</td><td>2.1</td><td>10</td></tr><tr align=right><td>pol_bio19</td><td>1.9</td><td>0</td></tr><tr align=right><td>pol_bio6</td><td>0.9</td><td>14.6</td></tr><tr align=right><td>pol_bio4</td><td>0.5</td><td>0</td></tr><tr align=right><td>pol_bio8</td><td>0.5</td><td>4.6</td></tr><tr align=right><td>pol_bio9</td><td>0.2</td><td>7.1</td></tr><tr align=right><td>pol_bio11</td><td>0</td><td>0</td></tr><tr align=right><td>pol_bio1</td><td>0</td><td>0</td></tr><tr align=right><td>pol_bio7</td><td>0</td><td>0</td></tr><tr align=right><td>pol_bio5</td><td>0</td><td>0</td></tr><tr align=right><td>pol_bio3</td><td>0</td><td>0</td></tr><tr align=right><td>pol_bio17</td><td>0</td><td>0</td></tr><tr align=right><td>pol_bio16</td><td>0</td><td>0</td></tr><tr align=right><td>pol_bio15</td><td>0</td><td>0</td></tr><tr align=right><td>pol_bio14</td><td>0</td><td>0</td></tr><tr align=right><td>pol_bio13</td><td>0</td><td>0</td></tr></table><br><br>
+The following picture shows the results of the jackknife test of variable importance.  The environmental variable with highest gain when used in isolation is pol_bio5, which therefore appears to have the most useful information by itself.  The environmental variable that decreases the gain the most when it is omitted is pol_bio2, which therefore appears to have the most information that isn't present in the other variables.<br>
+<br><img src="plots/Cinnamomum_mercadoi_jacknife.png"><br>
+<br><HR><H2>Raw data outputs and control parameters</H2><br>
+The data used in the above analysis is contained in the next links.  Please see the Help button for more information on these.<br>
+<a href = "Cinnamomum_mercadoi.asc">The model applied to the training environmental layers</a><br>
+<a href = "Cinnamomum_mercadoi.lambdas">The coefficients of the model</a><br>
+<a href = "Cinnamomum_mercadoi_omission.csv">The omission and predicted area for varying cumulative and raw thresholds</a><br>
+<a href = "Cinnamomum_mercadoi_samplePredictions.csv">The prediction strength at the training and (optionally) test presence sites</a><br>
+<a href = "maxentResults.csv">Results for all species modeled in the same Maxent run, with summary statistics and (optionally) jackknife results</a><br>
+<br><br>
+Regularized training gain is 0.451, training AUC is 0.845, unregularized training gain is 0.704.<br>
+Algorithm converged after 200 iterations (0 seconds).<br>
+<br>
+The follow settings were used during the run:<br>
+15 presence records used for training.<br>
+1100 points used to determine the Maxent distribution (background points and presence points).<br>
+Environmental layers used (all continuous): pol_alt pol_bio1 pol_bio10 pol_bio11 pol_bio12 pol_bio13 pol_bio14 pol_bio15 pol_bio16 pol_bio17 pol_bio18 pol_bio19 pol_bio2 pol_bio3 pol_bio4 pol_bio5 pol_bio6 pol_bio7 pol_bio8 pol_bio9<br>
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500<br>
+Feature types used: hinge product linear threshold quadratic<br>
+responsecurves: true<br>
+jackknife: true<br>
+outputformat: raw<br>
+outputdirectory: /Users/dondealban/Desktop/Tutorial/maxent<br>
+samplesfile: /Users/dondealban/Desktop/Tutorial/csv/polillo_cm.csv<br>
+environmentallayers: /Users/dondealban/Desktop/Tutorial/rasters/clipped<br>
+askoverwrite: false<br>
+writeplotdata: true<br>
+autofeature: false<br>
+Command line used: <br>
+<br>
+Command line to repeat this species model: java density.MaxEnt nowarnings noprefixes -E "" -E Cinnamomum_mercadoi responsecurves jackknife outputformat=raw outputdirectory=/Users/dondealban/Desktop/Tutorial/maxent samplesfile=/Users/dondealban/Desktop/Tutorial/csv/polillo_cm.csv environmentallayers=/Users/dondealban/Desktop/Tutorial/rasters/clipped noaskoverwrite writeplotdata noautofeature<br>

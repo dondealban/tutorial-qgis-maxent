@@ -1,0 +1,849 @@
+Sat Sep 23 12:50:25 SGT 2017
+MaxEnt version 3.3.3k
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_alt.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio1.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio10.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio11.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio12.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio13.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio14.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio15.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio16.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio17.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio18.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio19.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio2.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio3.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio4.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio5.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio6.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio7.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio8.asc
+Checking header of /Users/dondealban/Desktop/Tutorial/rasters/clipped/pol_bio9.asc
+Reading samples from polillo_cm.csv
+Read samples: max memory 3817865216, total allocated 434110464, free 273299232, used 160811232, increment 14715208
+Extractor: max memory 3817865216, total allocated 434110464, free 272075024, used 162035440, increment 1224208
+Extracting random background and sample data
+1100 points with values for all grids
+Adding samples to background in feature space
+Command line used: 
+Command line to repeat: java density.MaxEnt nowarnings noprefixes responsecurves jackknife outputformat=raw outputdirectory=/Users/dondealban/Desktop/Tutorial/maxent samplesfile=/Users/dondealban/Desktop/Tutorial/csv/polillo_cm.csv environmentallayers=/Users/dondealban/Desktop/Tutorial/rasters/clipped writeplotdata noautofeature
+Species: Cinnamomum_mercadoi
+Layers: pol_alt pol_bio1 pol_bio10 pol_bio11 pol_bio12 pol_bio13 pol_bio14 pol_bio15 pol_bio16 pol_bio17 pol_bio18 pol_bio19 pol_bio2 pol_bio3 pol_bio4 pol_bio5 pol_bio6 pol_bio7 pol_bio8 pol_bio9
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous
+responsecurves: true
+jackknife: true
+outputformat: raw
+outputdirectory: /Users/dondealban/Desktop/Tutorial/maxent
+samplesfile: /Users/dondealban/Desktop/Tutorial/csv/polillo_cm.csv
+environmentallayers: /Users/dondealban/Desktop/Tutorial/rasters/clipped
+writeplotdata: true
+autofeature: false
+
+getSamples: max memory 3817865216, total allocated 434110464, free 271431248, used 162679216, increment 643776
+Time since start: 85.715
+Making features
+makeFeatures: max memory 3817865216, total allocated 398983168, free 304577216, used 94405952, increment -68273264
+Cinnamomum_mercadoi: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 398983168, free 297731472, used 101251696, increment 6845744
+linearPredictor: max memory 3817865216, total allocated 398983168, free 297731472, used 101251696, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 398983168, free 297731472, used 101251696, increment 0
+Sequential: max memory 3817865216, total allocated 398983168, free 297731472, used 101251696, increment 0
+Initial loss: 7.003065458786462
+200: time = 0.298000 loss = 6.552562
+Resulting gain: 0.45050348443791055
+Projecting...
+Writing file /Users/dondealban/Desktop/Tutorial/maxent/Cinnamomum_mercadoi.asc
+Writing /Users/dondealban/Desktop/Tutorial/maxent/plots/Cinnamomum_mercadoi.png
+Cinnamomum_mercadoi response curves
+Time since start: 87.246
+Response curve: only pol_alt
+Making features
+makeFeatures: max memory 3817865216, total allocated 399507456, free 226152080, used 173355376, increment 72103680
+Cinnamomum_mercadoi pol_alt: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 399507456, free 226150016, used 173357440, increment 2064
+linearPredictor: max memory 3817865216, total allocated 399507456, free 226150016, used 173357440, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 399507456, free 226150016, used 173357440, increment 0
+Sequential: max memory 3817865216, total allocated 399507456, free 226150016, used 173357440, increment 0
+Initial loss: 7.003065458786462
+120: time = 0.037000 loss = 6.729869
+Resulting gain: 0.27319636743616016
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio1
+Making features
+makeFeatures: max memory 3817865216, total allocated 399507456, free 212323104, used 187184352, increment 13826912
+Cinnamomum_mercadoi pol_bio1: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 399507456, free 212323104, used 187184352, increment 0
+linearPredictor: max memory 3817865216, total allocated 399507456, free 212323104, used 187184352, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 399507456, free 212323104, used 187184352, increment 0
+Sequential: max memory 3817865216, total allocated 399507456, free 212323104, used 187184352, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.011000 loss = 6.749148
+Resulting gain: 0.2539175933217592
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio10
+Making features
+makeFeatures: max memory 3817865216, total allocated 399507456, free 204586856, used 194920600, increment 7736248
+Cinnamomum_mercadoi pol_bio10: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 399507456, free 204586856, used 194920600, increment 0
+linearPredictor: max memory 3817865216, total allocated 399507456, free 204586856, used 194920600, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 399507456, free 204586856, used 194920600, increment 0
+Sequential: max memory 3817865216, total allocated 399507456, free 204586856, used 194920600, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.012000 loss = 6.774667
+Resulting gain: 0.2283986735149819
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio11
+Making features
+makeFeatures: max memory 3817865216, total allocated 399507456, free 197244000, used 202263456, increment 7342856
+Cinnamomum_mercadoi pol_bio11: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 399507456, free 197244000, used 202263456, increment 0
+linearPredictor: max memory 3817865216, total allocated 399507456, free 197244000, used 202263456, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 399507456, free 197244000, used 202263456, increment 0
+Sequential: max memory 3817865216, total allocated 399507456, free 197244000, used 202263456, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.013000 loss = 6.801354
+Resulting gain: 0.2017112916992705
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio12
+Making features
+makeFeatures: max memory 3817865216, total allocated 399507456, free 192539144, used 206968312, increment 4704856
+Cinnamomum_mercadoi pol_bio12: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 399507456, free 191289096, used 208218360, increment 1250048
+linearPredictor: max memory 3817865216, total allocated 399507456, free 191289096, used 208218360, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 399507456, free 191289096, used 208218360, increment 0
+Sequential: max memory 3817865216, total allocated 399507456, free 191289096, used 208218360, increment 0
+Initial loss: 7.003065458786462
+120: time = 0.045000 loss = 6.829850
+Resulting gain: 0.17321505986952523
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio13
+Making features
+makeFeatures: max memory 3817865216, total allocated 399507456, free 168052688, used 231454768, increment 23236408
+Cinnamomum_mercadoi pol_bio13: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 399507456, free 168052688, used 231454768, increment 0
+linearPredictor: max memory 3817865216, total allocated 399507456, free 168052688, used 231454768, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 399507456, free 168052688, used 231454768, increment 0
+Sequential: max memory 3817865216, total allocated 399507456, free 168052688, used 231454768, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.029000 loss = 6.970708
+Resulting gain: 0.0323573083596056
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio14
+Making features
+makeFeatures: max memory 3817865216, total allocated 399507456, free 156825088, used 242682368, increment 11227600
+Cinnamomum_mercadoi pol_bio14: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 399507456, free 156825088, used 242682368, increment 0
+linearPredictor: max memory 3817865216, total allocated 399507456, free 156825088, used 242682368, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 399507456, free 156825088, used 242682368, increment 0
+Sequential: max memory 3817865216, total allocated 399507456, free 156825088, used 242682368, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.026000 loss = 6.893351
+Resulting gain: 0.10971489171120563
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio15
+Making features
+makeFeatures: max memory 3817865216, total allocated 399507456, free 148128208, used 251379248, increment 8696880
+Cinnamomum_mercadoi pol_bio15: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 399507456, free 148128208, used 251379248, increment 0
+linearPredictor: max memory 3817865216, total allocated 399507456, free 148128208, used 251379248, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 399507456, free 148128208, used 251379248, increment 0
+Sequential: max memory 3817865216, total allocated 399507456, free 148128208, used 251379248, increment 0
+Initial loss: 7.003065458786462
+100: time = 0.024000 loss = 6.897854
+Resulting gain: 0.10521174844600445
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio16
+Making features
+makeFeatures: max memory 3817865216, total allocated 399507456, free 139433808, used 260073648, increment 8694400
+Cinnamomum_mercadoi pol_bio16: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 399507456, free 139433808, used 260073648, increment 0
+linearPredictor: max memory 3817865216, total allocated 399507456, free 139433808, used 260073648, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 399507456, free 139433808, used 260073648, increment 0
+Sequential: max memory 3817865216, total allocated 399507456, free 139433808, used 260073648, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.020000 loss = 6.876583
+Resulting gain: 0.12648286555085342
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio17
+Making features
+makeFeatures: max memory 3817865216, total allocated 399507456, free 129343328, used 270164128, increment 10090480
+Cinnamomum_mercadoi pol_bio17: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 399507456, free 129343328, used 270164128, increment 0
+linearPredictor: max memory 3817865216, total allocated 399507456, free 129343328, used 270164128, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 399507456, free 129343328, used 270164128, increment 0
+Sequential: max memory 3817865216, total allocated 399507456, free 129343328, used 270164128, increment 0
+Initial loss: 7.003065458786462
+120: time = 0.045000 loss = 6.882394
+Resulting gain: 0.12067174078992426
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio18
+Making features
+makeFeatures: max memory 3817865216, total allocated 384303104, free 307956992, used 76346112, increment -193818016
+Cinnamomum_mercadoi pol_bio18: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 384303104, free 306111584, used 78191520, increment 1845408
+linearPredictor: max memory 3817865216, total allocated 384303104, free 306111584, used 78191520, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 384303104, free 306111584, used 78191520, increment 0
+Sequential: max memory 3817865216, total allocated 384303104, free 306111584, used 78191520, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.021000 loss = 6.807697
+Resulting gain: 0.19536859156103592
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio19
+Making features
+makeFeatures: max memory 3817865216, total allocated 384303104, free 295227824, used 89075280, increment 10883760
+Cinnamomum_mercadoi pol_bio19: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 384303104, free 293261368, used 91041736, increment 1966456
+linearPredictor: max memory 3817865216, total allocated 384303104, free 293261368, used 91041736, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 384303104, free 293261368, used 91041736, increment 0
+Sequential: max memory 3817865216, total allocated 384303104, free 293261368, used 91041736, increment 0
+Initial loss: 7.003065458786462
+100: time = 0.029000 loss = 6.944211
+Resulting gain: 0.058854367803171215
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio2
+Making features
+makeFeatures: max memory 3817865216, total allocated 384303104, free 283944032, used 100359072, increment 9317336
+Cinnamomum_mercadoi pol_bio2: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 384303104, free 283800976, used 100502128, increment 143056
+linearPredictor: max memory 3817865216, total allocated 384303104, free 283800976, used 100502128, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 384303104, free 283800976, used 100502128, increment 0
+Sequential: max memory 3817865216, total allocated 384303104, free 283800976, used 100502128, increment 0
+Initial loss: 7.003065458786462
+60: time = 0.024000 loss = 6.930975
+Resulting gain: 0.07209059780872451
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio3
+Making features
+makeFeatures: max memory 3817865216, total allocated 384303104, free 274810944, used 109492160, increment 8990032
+Cinnamomum_mercadoi pol_bio3: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 384303104, free 274810944, used 109492160, increment 0
+linearPredictor: max memory 3817865216, total allocated 384303104, free 274810944, used 109492160, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 384303104, free 274810944, used 109492160, increment 0
+Sequential: max memory 3817865216, total allocated 384303104, free 274810944, used 109492160, increment 0
+Initial loss: 7.003065458786462
+20: time = 0.007000 loss = 7.003065
+Resulting gain: 0.0
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio4
+Making features
+makeFeatures: max memory 3817865216, total allocated 384303104, free 272003120, used 112299984, increment 2807824
+Cinnamomum_mercadoi pol_bio4: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 384303104, free 270157696, used 114145408, increment 1845424
+linearPredictor: max memory 3817865216, total allocated 384303104, free 270157696, used 114145408, increment 0
+Time since start: 88.247
+FeaturedSpace: max memory 3817865216, total allocated 384303104, free 270157696, used 114145408, increment 0
+Sequential: max memory 3817865216, total allocated 384303104, free 270157696, used 114145408, increment 0
+Initial loss: 7.003065458786462
+180: time = 0.047000 loss = 6.903376
+Resulting gain: 0.09968976348207725
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio5
+Making features
+makeFeatures: max memory 3817865216, total allocated 384303104, free 252505160, used 131797944, increment 17652536
+Cinnamomum_mercadoi pol_bio5: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 384303104, free 252505160, used 131797944, increment 0
+linearPredictor: max memory 3817865216, total allocated 384303104, free 252505160, used 131797944, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 384303104, free 252505160, used 131797944, increment 0
+Sequential: max memory 3817865216, total allocated 384303104, free 252505160, used 131797944, increment 0
+Initial loss: 7.003065458786462
+120: time = 0.019000 loss = 6.727191
+Resulting gain: 0.27587469521072183
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio6
+Making features
+makeFeatures: max memory 3817865216, total allocated 384303104, free 245598520, used 138704584, increment 6906640
+Cinnamomum_mercadoi pol_bio6: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 384303104, free 245598520, used 138704584, increment 0
+linearPredictor: max memory 3817865216, total allocated 384303104, free 245598520, used 138704584, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 384303104, free 245598520, used 138704584, increment 0
+Sequential: max memory 3817865216, total allocated 384303104, free 245598520, used 138704584, increment 0
+Initial loss: 7.003065458786462
+120: time = 0.018000 loss = 6.760490
+Resulting gain: 0.24257553284082967
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio7
+Making features
+makeFeatures: max memory 3817865216, total allocated 384303104, free 238544688, used 145758416, increment 7053832
+Cinnamomum_mercadoi pol_bio7: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 384303104, free 238544688, used 145758416, increment 0
+linearPredictor: max memory 3817865216, total allocated 384303104, free 238544688, used 145758416, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 384303104, free 238544688, used 145758416, increment 0
+Sequential: max memory 3817865216, total allocated 384303104, free 238544688, used 145758416, increment 0
+Initial loss: 7.003065458786462
+60: time = 0.024000 loss = 6.958687
+Resulting gain: 0.04437796290388096
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio8
+Making features
+makeFeatures: max memory 3817865216, total allocated 384303104, free 231557064, used 152746040, increment 6987624
+Cinnamomum_mercadoi pol_bio8: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 384303104, free 229483328, used 154819776, increment 2073736
+linearPredictor: max memory 3817865216, total allocated 384303104, free 229483328, used 154819776, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 384303104, free 229483328, used 154819776, increment 0
+Sequential: max memory 3817865216, total allocated 384303104, free 229483328, used 154819776, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.013000 loss = 6.796285
+Resulting gain: 0.20678061495223954
+Cinnamomum_mercadoi response curves
+Response curve: only pol_bio9
+Making features
+makeFeatures: max memory 3817865216, total allocated 384303104, free 224714008, used 159589096, increment 4769320
+Cinnamomum_mercadoi pol_bio9: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 384303104, free 224714008, used 159589096, increment 0
+linearPredictor: max memory 3817865216, total allocated 384303104, free 224714008, used 159589096, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 384303104, free 224714008, used 159589096, increment 0
+Sequential: max memory 3817865216, total allocated 384303104, free 224714008, used 159589096, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.015000 loss = 6.894243
+Resulting gain: 0.10882203866275209
+Cinnamomum_mercadoi response curves
+Jackknife: leave pol_alt out
+Making features
+makeFeatures: max memory 3817865216, total allocated 384303104, free 190166048, used 194137056, increment 34547960
+Cinnamomum_mercadoi pol_alt: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 384303104, free 186246904, used 198056200, increment 3919144
+linearPredictor: max memory 3817865216, total allocated 384303104, free 186246904, used 198056200, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 384303104, free 186246904, used 198056200, increment 0
+Sequential: max memory 3817865216, total allocated 384303104, free 186246904, used 198056200, increment 0
+Initial loss: 7.003065458786462
+180: time = 0.237000 loss = 6.555336
+Jackknife: leave pol_bio1 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 380108800, free 284366904, used 95741896, increment -102314304
+Cinnamomum_mercadoi pol_bio1: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 380108800, free 282168808, used 97939992, increment 2198096
+linearPredictor: max memory 3817865216, total allocated 380108800, free 282168808, used 97939992, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 380108800, free 282168808, used 97939992, increment 0
+Sequential: max memory 3817865216, total allocated 380108800, free 282168808, used 97939992, increment 0
+Initial loss: 7.003065458786462
+Time since start: 89.319
+220: time = 0.301000 loss = 6.552613
+Jackknife: leave pol_bio10 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 380108800, free 161647704, used 218461096, increment 120521104
+Cinnamomum_mercadoi pol_bio10: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 380108800, free 159445128, used 220663672, increment 2202576
+linearPredictor: max memory 3817865216, total allocated 380108800, free 159445128, used 220663672, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 380108800, free 159445128, used 220663672, increment 0
+Sequential: max memory 3817865216, total allocated 380108800, free 159445128, used 220663672, increment 0
+Initial loss: 7.003065458786462
+200: time = 0.278000 loss = 6.552616
+Jackknife: leave pol_bio11 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 373817344, free 230787064, used 143030280, increment -77633392
+Cinnamomum_mercadoi pol_bio11: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 373817344, free 228014792, used 145802552, increment 2772272
+linearPredictor: max memory 3817865216, total allocated 373817344, free 228014792, used 145802552, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 373817344, free 228014792, used 145802552, increment 0
+Sequential: max memory 3817865216, total allocated 373817344, free 228014792, used 145802552, increment 0
+Initial loss: 7.003065458786462
+220: time = 0.306000 loss = 6.552604
+Jackknife: leave pol_bio12 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 367525888, free 282447296, used 85078592, increment -60723960
+Cinnamomum_mercadoi pol_bio12: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 367525888, free 279809984, used 87715904, increment 2637312
+linearPredictor: max memory 3817865216, total allocated 367525888, free 279809984, used 87715904, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 367525888, free 279809984, used 87715904, increment 0
+Sequential: max memory 3817865216, total allocated 367525888, free 279809984, used 87715904, increment 0
+Initial loss: 7.003065458786462
+200: time = 0.238000 loss = 6.555735
+Jackknife: leave pol_bio13 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 367525888, free 190229696, used 177296192, increment 89580288
+Cinnamomum_mercadoi pol_bio13: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 367525888, free 187590072, used 179935816, increment 2639624
+linearPredictor: max memory 3817865216, total allocated 367525888, free 187590072, used 179935816, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 367525888, free 187590072, used 179935816, increment 0
+Sequential: max memory 3817865216, total allocated 367525888, free 187590072, used 179935816, increment 0
+Initial loss: 7.003065458786462
+Time since start: 90.562
+200: time = 0.272000 loss = 6.552621
+Jackknife: leave pol_bio14 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 360710144, free 252132176, used 108577968, increment -71357848
+Cinnamomum_mercadoi pol_bio14: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 360710144, free 249467120, used 111243024, increment 2665056
+linearPredictor: max memory 3817865216, total allocated 360710144, free 249467120, used 111243024, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 360710144, free 249467120, used 111243024, increment 0
+Sequential: max memory 3817865216, total allocated 360710144, free 249467120, used 111243024, increment 0
+Initial loss: 7.003065458786462
+200: time = 0.268000 loss = 6.552621
+Jackknife: leave pol_bio15 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 360710144, free 142215280, used 218494864, increment 107251840
+Cinnamomum_mercadoi pol_bio15: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 360710144, free 139545760, used 221164384, increment 2669520
+linearPredictor: max memory 3817865216, total allocated 360710144, free 139545760, used 221164384, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 360710144, free 139545760, used 221164384, increment 0
+Sequential: max memory 3817865216, total allocated 360710144, free 139545760, used 221164384, increment 0
+Initial loss: 7.003065458786462
+220: time = 0.301000 loss = 6.552629
+Jackknife: leave pol_bio16 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 358088704, free 186059568, used 172029136, increment -49135248
+Cinnamomum_mercadoi pol_bio16: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 358088704, free 183246000, used 174842704, increment 2813568
+linearPredictor: max memory 3817865216, total allocated 358088704, free 183246000, used 174842704, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 358088704, free 183246000, used 174842704, increment 0
+Sequential: max memory 3817865216, total allocated 358088704, free 183246000, used 174842704, increment 0
+Initial loss: 7.003065458786462
+200: time = 0.269000 loss = 6.552614
+Jackknife: leave pol_bio17 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 349700096, free 235138160, used 114561936, increment -60280768
+Cinnamomum_mercadoi pol_bio17: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 349700096, free 232355208, used 117344888, increment 2782952
+linearPredictor: max memory 3817865216, total allocated 349700096, free 232355208, used 117344888, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 349700096, free 232355208, used 117344888, increment 0
+Sequential: max memory 3817865216, total allocated 349700096, free 232355208, used 117344888, increment 0
+Initial loss: 7.003065458786462
+Time since start: 91.802
+200: time = 0.259000 loss = 6.552567
+Jackknife: leave pol_bio18 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 349700096, free 132053256, used 217646840, increment 100301952
+Cinnamomum_mercadoi pol_bio18: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 349700096, free 129415776, used 220284320, increment 2637480
+linearPredictor: max memory 3817865216, total allocated 349700096, free 129415776, used 220284320, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 349700096, free 129415776, used 220284320, increment 0
+Sequential: max memory 3817865216, total allocated 349700096, free 129415776, used 220284320, increment 0
+Initial loss: 7.003065458786462
+220: time = 0.293000 loss = 6.564146
+Jackknife: leave pol_bio19 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 346030080, free 173791808, used 172238272, increment -48046048
+Cinnamomum_mercadoi pol_bio19: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 346030080, free 171071952, used 174958128, increment 2719856
+linearPredictor: max memory 3817865216, total allocated 346030080, free 171071952, used 174958128, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 346030080, free 171071952, used 174958128, increment 0
+Sequential: max memory 3817865216, total allocated 346030080, free 171071952, used 174958128, increment 0
+Initial loss: 7.003065458786462
+220: time = 0.290000 loss = 6.552613
+Jackknife: leave pol_bio2 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 339738624, free 201428400, used 138310224, increment -36647904
+Cinnamomum_mercadoi pol_bio2: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 339738624, free 198350872, used 141387752, increment 3077528
+linearPredictor: max memory 3817865216, total allocated 339738624, free 198350872, used 141387752, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 339738624, free 198350872, used 141387752, increment 0
+Sequential: max memory 3817865216, total allocated 339738624, free 198350872, used 141387752, increment 0
+Initial loss: 7.003065458786462
+Time since start: 92.877
+300: time = 0.387000 loss = 6.635956
+Jackknife: leave pol_bio3 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 335544320, free 177808608, used 157735712, increment 16347960
+Cinnamomum_mercadoi pol_bio3: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 335544320, free 174966256, used 160578064, increment 2842352
+linearPredictor: max memory 3817865216, total allocated 335544320, free 174966256, used 160578064, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 335544320, free 174966256, used 160578064, increment 0
+Sequential: max memory 3817865216, total allocated 335544320, free 174966256, used 160578064, increment 0
+Initial loss: 7.003065458786462
+200: time = 0.285000 loss = 6.552618
+Jackknife: leave pol_bio4 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 329252864, free 200518104, used 128734760, increment -31843304
+Cinnamomum_mercadoi pol_bio4: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 329252864, free 198129256, used 131123608, increment 2388848
+linearPredictor: max memory 3817865216, total allocated 329252864, free 198129256, used 131123608, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 329252864, free 198129256, used 131123608, increment 0
+Sequential: max memory 3817865216, total allocated 329252864, free 198129256, used 131123608, increment 0
+Initial loss: 7.003065458786462
+240: time = 0.311000 loss = 6.556396
+Jackknife: leave pol_bio5 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 326107136, free 211311728, used 114795408, increment -16328200
+Cinnamomum_mercadoi pol_bio5: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 326107136, free 208651280, used 117455856, increment 2660448
+linearPredictor: max memory 3817865216, total allocated 326107136, free 208651280, used 117455856, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 326107136, free 208651280, used 117455856, increment 0
+Sequential: max memory 3817865216, total allocated 326107136, free 208651280, used 117455856, increment 0
+Initial loss: 7.003065458786462
+Time since start: 93.88
+220: time = 0.301000 loss = 6.552630
+Jackknife: leave pol_bio6 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 320864256, free 215065712, used 105798544, increment -11657312
+Cinnamomum_mercadoi pol_bio6: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 320864256, free 212672048, used 108192208, increment 2393664
+linearPredictor: max memory 3817865216, total allocated 320864256, free 212672048, used 108192208, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 320864256, free 212672048, used 108192208, increment 0
+Sequential: max memory 3817865216, total allocated 320864256, free 212672048, used 108192208, increment 0
+Initial loss: 7.003065458786462
+280: time = 0.380000 loss = 6.560544
+Jackknife: leave pol_bio7 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 318242816, free 184723456, used 133519360, increment 25327152
+Cinnamomum_mercadoi pol_bio7: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 318242816, free 182390152, used 135852664, increment 2333304
+linearPredictor: max memory 3817865216, total allocated 318242816, free 182390152, used 135852664, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 318242816, free 182390152, used 135852664, increment 0
+Sequential: max memory 3817865216, total allocated 318242816, free 182390152, used 135852664, increment 0
+Initial loss: 7.003065458786462
+200: time = 0.281000 loss = 6.552529
+Jackknife: leave pol_bio8 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 313524224, free 192539992, used 120984232, increment -14868432
+Cinnamomum_mercadoi pol_bio8: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 313524224, free 190419560, used 123104664, increment 2120432
+linearPredictor: max memory 3817865216, total allocated 313524224, free 190419560, used 123104664, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 313524224, free 190419560, used 123104664, increment 0
+Sequential: max memory 3817865216, total allocated 313524224, free 190419560, used 123104664, increment 0
+Initial loss: 7.003065458786462
+Time since start: 94.973
+240: time = 0.323000 loss = 6.555305
+Jackknife: leave pol_bio9 out
+Making features
+makeFeatures: max memory 3817865216, total allocated 309854208, free 179121856, used 130732352, increment 7627688
+Cinnamomum_mercadoi pol_bio9: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 309854208, free 174561608, used 135292600, increment 4560248
+linearPredictor: max memory 3817865216, total allocated 309854208, free 174561608, used 135292600, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 309854208, free 174561608, used 135292600, increment 0
+Sequential: max memory 3817865216, total allocated 309854208, free 174561608, used 135292600, increment 0
+Initial loss: 7.003065458786462
+200: time = 0.274000 loss = 6.555741
+Jackknife: only pol_alt
+Making features
+makeFeatures: max memory 3817865216, total allocated 306184192, free 182287600, used 123896592, increment -11396008
+Cinnamomum_mercadoi pol_alt: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 306184192, free 181979704, used 124204488, increment 307896
+linearPredictor: max memory 3817865216, total allocated 306184192, free 181979704, used 124204488, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 306184192, free 181979704, used 124204488, increment 0
+Sequential: max memory 3817865216, total allocated 306184192, free 181979704, used 124204488, increment 0
+Initial loss: 7.003065458786462
+120: time = 0.038000 loss = 6.729869
+Res.gain: 0.27319636743616016
+Jackknife: only pol_bio1
+Making features
+makeFeatures: max memory 3817865216, total allocated 306184192, free 171557784, used 134626408, increment 10421920
+Cinnamomum_mercadoi pol_bio1: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 306184192, free 171557784, used 134626408, increment 0
+linearPredictor: max memory 3817865216, total allocated 306184192, free 171557784, used 134626408, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 306184192, free 171557784, used 134626408, increment 0
+Sequential: max memory 3817865216, total allocated 306184192, free 171557784, used 134626408, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.012000 loss = 6.749148
+Res.gain: 0.2539175933217592
+Jackknife: only pol_bio10
+Making features
+makeFeatures: max memory 3817865216, total allocated 306184192, free 167864104, used 138320088, increment 3693680
+Cinnamomum_mercadoi pol_bio10: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 306184192, free 167721048, used 138463144, increment 143056
+linearPredictor: max memory 3817865216, total allocated 306184192, free 167721048, used 138463144, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 306184192, free 167721048, used 138463144, increment 0
+Sequential: max memory 3817865216, total allocated 306184192, free 167721048, used 138463144, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.013000 loss = 6.774667
+Res.gain: 0.2283986735149819
+Jackknife: only pol_bio11
+Making features
+makeFeatures: max memory 3817865216, total allocated 306184192, free 165936432, used 140247760, increment 1784616
+Cinnamomum_mercadoi pol_bio11: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 306184192, free 165936432, used 140247760, increment 0
+linearPredictor: max memory 3817865216, total allocated 306184192, free 165936432, used 140247760, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 306184192, free 165936432, used 140247760, increment 0
+Sequential: max memory 3817865216, total allocated 306184192, free 165936432, used 140247760, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.014000 loss = 6.801354
+Res.gain: 0.2017112916992705
+Jackknife: only pol_bio12
+Making features
+makeFeatures: max memory 3817865216, total allocated 306184192, free 163917928, used 142266264, increment 2018504
+Cinnamomum_mercadoi pol_bio12: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 306184192, free 163610032, used 142574160, increment 307896
+linearPredictor: max memory 3817865216, total allocated 306184192, free 163610032, used 142574160, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 306184192, free 163610032, used 142574160, increment 0
+Sequential: max memory 3817865216, total allocated 306184192, free 163610032, used 142574160, increment 0
+Initial loss: 7.003065458786462
+120: time = 0.045000 loss = 6.829850
+Res.gain: 0.17321505986952523
+Jackknife: only pol_bio13
+Making features
+makeFeatures: max memory 3817865216, total allocated 306184192, free 144418456, used 161765736, increment 19191576
+Cinnamomum_mercadoi pol_bio13: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 306184192, free 144418456, used 161765736, increment 0
+linearPredictor: max memory 3817865216, total allocated 306184192, free 144418456, used 161765736, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 306184192, free 144418456, used 161765736, increment 0
+Sequential: max memory 3817865216, total allocated 306184192, free 144418456, used 161765736, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.029000 loss = 6.970708
+Res.gain: 0.0323573083596056
+Jackknife: only pol_bio14
+Making features
+makeFeatures: max memory 3817865216, total allocated 306184192, free 139250456, used 166933736, increment 5168000
+Cinnamomum_mercadoi pol_bio14: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 306184192, free 139250456, used 166933736, increment 0
+linearPredictor: max memory 3817865216, total allocated 306184192, free 139250456, used 166933736, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 306184192, free 139250456, used 166933736, increment 0
+Sequential: max memory 3817865216, total allocated 306184192, free 139250456, used 166933736, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.025000 loss = 6.893351
+Res.gain: 0.10971489171120563
+Jackknife: only pol_bio15
+Making features
+makeFeatures: max memory 3817865216, total allocated 306184192, free 134475872, used 171708320, increment 4774584
+Cinnamomum_mercadoi pol_bio15: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 306184192, free 134475872, used 171708320, increment 0
+linearPredictor: max memory 3817865216, total allocated 306184192, free 134475872, used 171708320, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 306184192, free 134475872, used 171708320, increment 0
+Sequential: max memory 3817865216, total allocated 306184192, free 134475872, used 171708320, increment 0
+Initial loss: 7.003065458786462
+100: time = 0.024000 loss = 6.897854
+Res.gain: 0.10521174844600445
+Jackknife: only pol_bio16
+Making features
+makeFeatures: max memory 3817865216, total allocated 306184192, free 129973528, used 176210664, increment 4502344
+Cinnamomum_mercadoi pol_bio16: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 306184192, free 129701376, used 176482816, increment 272152
+linearPredictor: max memory 3817865216, total allocated 306184192, free 129701376, used 176482816, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 306184192, free 129701376, used 176482816, increment 0
+Sequential: max memory 3817865216, total allocated 306184192, free 129701376, used 176482816, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.020000 loss = 6.876583
+Res.gain: 0.12648286555085342
+Jackknife: only pol_bio17
+Making features
+makeFeatures: max memory 3817865216, total allocated 306184192, free 125256624, used 180927568, increment 4444752
+Cinnamomum_mercadoi pol_bio17: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 306184192, free 125256624, used 180927568, increment 0
+linearPredictor: max memory 3817865216, total allocated 306184192, free 123250816, used 182933376, increment 2005808
+FeaturedSpace: max memory 3817865216, total allocated 306184192, free 123250816, used 182933376, increment 0
+Sequential: max memory 3817865216, total allocated 306184192, free 123250816, used 182933376, increment 0
+Initial loss: 7.003065458786462
+120: time = 0.042000 loss = 6.882394
+Res.gain: 0.12067174078992426
+Jackknife: only pol_bio18
+Making features
+makeFeatures: max memory 3817865216, total allocated 303038464, free 225416584, used 77621880, increment -105311496
+Cinnamomum_mercadoi pol_bio18: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 303038464, free 225416584, used 77621880, increment 0
+linearPredictor: max memory 3817865216, total allocated 303038464, free 225416584, used 77621880, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 303038464, free 225416584, used 77621880, increment 0
+Sequential: max memory 3817865216, total allocated 303038464, free 225416584, used 77621880, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.021000 loss = 6.807697
+Res.gain: 0.19536859156103592
+Jackknife: only pol_bio19
+Making features
+makeFeatures: max memory 3817865216, total allocated 303038464, free 219165640, used 83872824, increment 6250944
+Cinnamomum_mercadoi pol_bio19: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 303038464, free 219165640, used 83872824, increment 0
+linearPredictor: max memory 3817865216, total allocated 303038464, free 219165640, used 83872824, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 303038464, free 219165640, used 83872824, increment 0
+Sequential: max memory 3817865216, total allocated 303038464, free 219165640, used 83872824, increment 0
+Initial loss: 7.003065458786462
+100: time = 0.028000 loss = 6.944211
+Res.gain: 0.058854367803171215
+Jackknife: only pol_bio2
+Making features
+makeFeatures: max memory 3817865216, total allocated 303038464, free 212630528, used 90407936, increment 6535112
+Cinnamomum_mercadoi pol_bio2: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 303038464, free 212487472, used 90550992, increment 143056
+linearPredictor: max memory 3817865216, total allocated 303038464, free 212487472, used 90550992, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 303038464, free 212081688, used 90956776, increment 405784
+Sequential: max memory 3817865216, total allocated 303038464, free 212081688, used 90956776, increment 0
+Initial loss: 7.003065458786462
+60: time = 0.024000 loss = 6.930975
+Res.gain: 0.07209059780872451
+Jackknife: only pol_bio3
+Making features
+makeFeatures: max memory 3817865216, total allocated 303038464, free 209934472, used 93103992, increment 2147216
+Cinnamomum_mercadoi pol_bio3: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 303038464, free 209934472, used 93103992, increment 0
+linearPredictor: max memory 3817865216, total allocated 303038464, free 209934472, used 93103992, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 303038464, free 209934472, used 93103992, increment 0
+Sequential: max memory 3817865216, total allocated 303038464, free 209934472, used 93103992, increment 0
+Initial loss: 7.003065458786462
+20: time = 0.007000 loss = 7.003065
+Res.gain: 0.0
+Jackknife: only pol_bio4
+Making features
+makeFeatures: max memory 3817865216, total allocated 303038464, free 207305224, used 95733240, increment 2629248
+Cinnamomum_mercadoi pol_bio4: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 303038464, free 207305224, used 95733240, increment 0
+linearPredictor: max memory 3817865216, total allocated 303038464, free 207305224, used 95733240, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 303038464, free 207305224, used 95733240, increment 0
+Sequential: max memory 3817865216, total allocated 303038464, free 207305224, used 95733240, increment 0
+Initial loss: 7.003065458786462
+180: time = 0.047000 loss = 6.903376
+Res.gain: 0.09968976348207725
+Jackknife: only pol_bio5
+Making features
+makeFeatures: max memory 3817865216, total allocated 303038464, free 196254768, used 106783696, increment 11050456
+Cinnamomum_mercadoi pol_bio5: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 303038464, free 194456104, used 108582360, increment 1798664
+linearPredictor: max memory 3817865216, total allocated 303038464, free 194456104, used 108582360, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 303038464, free 194456104, used 108582360, increment 0
+Sequential: max memory 3817865216, total allocated 303038464, free 194456104, used 108582360, increment 0
+Initial loss: 7.003065458786462
+120: time = 0.020000 loss = 6.727191
+Res.gain: 0.27587469521072183
+Jackknife: only pol_bio6
+Making features
+makeFeatures: max memory 3817865216, total allocated 303038464, free 191938968, used 111099496, increment 2517136
+Cinnamomum_mercadoi pol_bio6: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 303038464, free 191938968, used 111099496, increment 0
+linearPredictor: max memory 3817865216, total allocated 303038464, free 191938968, used 111099496, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 303038464, free 191938968, used 111099496, increment 0
+Sequential: max memory 3817865216, total allocated 303038464, free 191938968, used 111099496, increment 0
+Initial loss: 7.003065458786462
+120: time = 0.017000 loss = 6.760490
+Res.gain: 0.24257553284082967
+Jackknife: only pol_bio7
+Making features
+makeFeatures: max memory 3817865216, total allocated 303038464, free 189302160, used 113736304, increment 2636808
+Cinnamomum_mercadoi pol_bio7: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 303038464, free 189302160, used 113736304, increment 0
+linearPredictor: max memory 3817865216, total allocated 303038464, free 189302160, used 113736304, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 303038464, free 189302160, used 113736304, increment 0
+Sequential: max memory 3817865216, total allocated 303038464, free 189302160, used 113736304, increment 0
+Initial loss: 7.003065458786462
+60: time = 0.023000 loss = 6.958687
+Res.gain: 0.04437796290388096
+Jackknife: only pol_bio8
+Making features
+makeFeatures: max memory 3817865216, total allocated 303038464, free 185205112, used 117833352, increment 4097048
+Cinnamomum_mercadoi pol_bio8: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 303038464, free 185205112, used 117833352, increment 0
+linearPredictor: max memory 3817865216, total allocated 303038464, free 185205112, used 117833352, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 303038464, free 185205112, used 117833352, increment 0
+Sequential: max memory 3817865216, total allocated 303038464, free 185205112, used 117833352, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.013000 loss = 6.796285
+Res.gain: 0.20678061495223954
+Jackknife: only pol_bio9
+Making features
+makeFeatures: max memory 3817865216, total allocated 303038464, free 183594296, used 119444168, increment 1610816
+Cinnamomum_mercadoi pol_bio9: 
+Regularization values: linear/quadratic/product: 1.100, categorical: 0.321, threshold: 1.850, hinge: 0.500
+15 samples
+Density: max memory 3817865216, total allocated 303038464, free 183594296, used 119444168, increment 0
+linearPredictor: max memory 3817865216, total allocated 303038464, free 183594296, used 119444168, increment 0
+FeaturedSpace: max memory 3817865216, total allocated 303038464, free 183594296, used 119444168, increment 0
+Sequential: max memory 3817865216, total allocated 303038464, free 183594296, used 119444168, increment 0
+Initial loss: 7.003065458786462
+80: time = 0.016000 loss = 6.894243
+Res.gain: 0.10882203866275209
+Ending
